@@ -1,0 +1,217 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-secondary": "#ffffff",
+        "inverse-primary": "#a8cfc0",
+        "primary-container": "#183d32",
+        "error-container": "#ffdad6",
+        "surface-tint": "#416659",
+        "primary-fixed": "#c3ebdb",
+        "primary-fixed-dim": "#a8cfc0",
+        "surface-container-highest": "#e5e2da",
+        "on-tertiary-container": "#99a298",
+        "on-error": "#ffffff",
+        "on-surface": "#1c1c17",
+        "surface-variant": "#e5e2da",
+        "inverse-on-surface": "#f3f1e9",
+        secondary: "#49645b",
+        "on-secondary-fixed": "#042019",
+        "on-secondary-fixed-variant": "#314c44",
+        "on-background": "#1c1c17",
+        "tertiary-fixed-dim": "#c0c9bd",
+        "surface-container-high": "#ebe8e0",
+        outline: "#717975",
+        "on-primary-fixed-variant": "#294d42",
+        "secondary-container": "#c8e6db",
+        "on-tertiary-fixed-variant": "#404940",
+        "on-tertiary": "#ffffff",
+        "surface-container-low": "#f6f3eb",
+        "secondary-fixed-dim": "#afcdc2",
+        "outline-variant": "#c1c8c4",
+        surface: "#fcf9f1",
+        "on-primary-container": "#81a899",
+        "surface-dim": "#dcdad2",
+        "on-surface-variant": "#414845",
+        "tertiary-fixed": "#dce5d9",
+        tertiary: "#1b231c",
+        primary: "#00271d",
+        "secondary-fixed": "#cbe9de",
+        "on-error-container": "#93000a",
+        error: "#ba1a1a",
+        "on-secondary-container": "#4d685f",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed": "#161d16",
+        "on-primary-fixed": "#002118",
+        "surface-container": "#f1eee6",
+        "surface-bright": "#fcf9f1",
+        "on-primary": "#ffffff",
+        background: "#fcf9f1",
+        "inverse-surface": "#31312b",
+        "tertiary-container": "#313931",
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        "2xl": "0.75rem",
+        full: "9999px",
+      },
+      spacing: {
+        "space-md": "1rem",
+        "margin-lg": "4rem",
+        "space-lg": "1.5rem",
+        margin: "2rem",
+        "space-sm": "0.5rem",
+        "space-2xl": "4rem",
+        gutter: "1.5rem",
+        "margin-sm": "1rem",
+        "gutter-sm": "1rem",
+        "gutter-lg": "2.5rem",
+        "space-xs": "0.25rem",
+        "space-xl": "2.5rem",
+      },
+      fontFamily: {
+        sans: ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        serif: ["var(--font-playfair)", "Playfair Display", "serif"],
+        "display-hero": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-lg": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-md": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "headline-sm": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "title-editorial": ["var(--font-playfair)", "Playfair Display", "serif"],
+        "body-lg": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "label-caps": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "price-lg": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+        "price-md": ["var(--font-jakarta)", "Plus Jakarta Sans", "sans-serif"],
+      },
+      fontSize: {
+        "display-hero": [
+          "56px",
+          {
+            lineHeight: "64px",
+            letterSpacing: "-0.02em",
+            fontWeight: "400",
+          },
+        ],
+        "display-hero-mobile": [
+          "36px",
+          {
+            lineHeight: "44px",
+            letterSpacing: "-0.01em",
+            fontWeight: "400",
+          },
+        ],
+        "headline-lg": [
+          "40px",
+          {
+            lineHeight: "48px",
+            letterSpacing: "-0.015em",
+            fontWeight: "400",
+          },
+        ],
+        "headline-lg-mobile": [
+          "28px",
+          {
+            lineHeight: "36px",
+            letterSpacing: "-0.01em",
+            fontWeight: "400",
+          },
+        ],
+        "headline-md": [
+          "28px",
+          {
+            lineHeight: "36px",
+            letterSpacing: "-0.01em",
+            fontWeight: "500",
+          },
+        ],
+        "headline-sm": [
+          "22px",
+          {
+            lineHeight: "30px",
+            letterSpacing: "0em",
+            fontWeight: "500",
+          },
+        ],
+        "title-editorial": [
+          "18px",
+          {
+            lineHeight: "24px",
+            letterSpacing: "0.01em",
+            fontWeight: "600",
+          },
+        ],
+        "body-lg": [
+          "18px",
+          {
+            lineHeight: "28px",
+            letterSpacing: "-0.005em",
+            fontWeight: "400",
+          },
+        ],
+        "body-md": [
+          "15px",
+          {
+            lineHeight: "24px",
+            letterSpacing: "0em",
+            fontWeight: "400",
+          },
+        ],
+        "body-sm": [
+          "13px",
+          {
+            lineHeight: "20px",
+            letterSpacing: "0.005em",
+            fontWeight: "400",
+          },
+        ],
+        "label-md": [
+          "13px",
+          {
+            lineHeight: "18px",
+            letterSpacing: "0.01em",
+            fontWeight: "500",
+          },
+        ],
+        "label-caps": [
+          "11px",
+          {
+            lineHeight: "14px",
+            letterSpacing: "0.08em",
+            fontWeight: "600",
+          },
+        ],
+        "price-lg": [
+          "20px",
+          {
+            lineHeight: "26px",
+            letterSpacing: "-0.02em",
+            fontWeight: "600",
+          },
+        ],
+        "price-md": [
+          "16px",
+          {
+            lineHeight: "22px",
+            letterSpacing: "-0.01em",
+            fontWeight: "600",
+          },
+        ],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
