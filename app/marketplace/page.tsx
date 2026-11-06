@@ -41,8 +41,13 @@ function MarketplaceContent() {
   const filtered = filterProducts(allProducts, filters);
 
   useEffect(() => {
-    if (qParam) setFilters((f) => ({ ...f, search: qParam }));
-    if (catParam) setFilters((f) => ({ ...f, categories: [catParam as Category] }));
+    // Sync filters from URL search params
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setFilters((f) => ({
+      ...f,
+      ...(qParam ? { search: qParam } : {}),
+      ...(catParam ? { categories: [catParam as Category] } : {}),
+    }));
   }, [qParam, catParam]);
 
   const toggleCategory = (cat: Category) => {
@@ -63,6 +68,15 @@ function MarketplaceContent() {
     }));
   };
 
+  const toggleCondition = (cond: Condition) => {
+    setFilters((f) => ({
+      ...f,
+      conditions: f.conditions.includes(cond)
+        ? f.conditions.filter((c) => c !== cond)
+        : [...f.conditions, cond],
+    }));
+  };
+
   const resetFilters = () => setFilters(DEFAULT_FILTERS);
 
   const hasActiveFilters =
@@ -73,7 +87,7 @@ function MarketplaceContent() {
     filters.minPrice !== null ||
     filters.maxPrice !== null;
 
-  const Sidebar = () => (
+  const renderSidebar = () => (
     <aside className="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-lg">
       {/* Header */}
       <div className="flex items-center justify-between pb-space-xs">
@@ -145,6 +159,28 @@ function MarketplaceContent() {
               }`}
             >
               {lt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Condition */}
+      <div className="flex flex-col gap-space-xs">
+        <label className="text-[11px] font-semibold text-primary uppercase tracking-wider">
+          Condition
+        </label>
+        <div className="flex flex-wrap gap-1.5 mt-1">
+          {CONDITIONS.map((cond) => (
+            <button
+              key={cond}
+              onClick={() => toggleCondition(cond)}
+              className={`px-2.5 py-1 rounded text-[11px] font-semibold transition-colors ${
+                filters.conditions.includes(cond)
+                  ? "bg-secondary-container text-on-secondary-container"
+                  : "bg-surface-container hover:bg-secondary-container text-on-surface-variant"
+              }`}
+            >
+              {cond}
             </button>
           ))}
         </div>
@@ -303,7 +339,7 @@ function MarketplaceContent() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
           {/* Desktop sidebar */}
           <div className="hidden lg:block lg:col-span-3 sticky top-24">
-            <Sidebar />
+            {renderSidebar()}
           </div>
 
           {/* Mobile sidebar overlay */}
@@ -322,7 +358,7 @@ function MarketplaceContent() {
                     <X size={22} className="text-on-surface-variant" />
                   </button>
                 </div>
-                <Sidebar />
+                {renderSidebar()}
               </div>
             </div>
           )}

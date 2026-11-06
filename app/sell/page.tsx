@@ -53,6 +53,13 @@ const EMPTY_FORM: FormData = {
   tags: "",
 };
 
+interface AiListingSuggestions {
+  suggestedTitle?: string;
+  suggestedDescription?: string;
+  suggestedKeywords?: string[];
+  pricingNote?: string | null;
+}
+
 export default function SellPage() {
   const router = useRouter();
   const { addListing } = useMarketplace();
@@ -64,7 +71,7 @@ export default function SellPage() {
   const [step, setStep] = useState<Step>("form");
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [isAiLoading, setIsAiLoading] = useState(false);
-  const [aiSuggestions, setAiSuggestions] = useState<Partial<FormData> | null>(null);
+  const [aiSuggestions, setAiSuggestions] = useState<AiListingSuggestions | null>(null);
   const [aiError, setAiError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -132,13 +139,14 @@ export default function SellPage() {
           description: form.description,
           category: form.category,
           listingType: form.listingType,
+          condition: form.condition,
         }),
       });
       const data = await res.json();
-      if (data.fallback) {
+      if (data.fallback || !data.suggestions) {
         setAiError(data.reason || "AI suggestions unavailable right now. Please fill in the form manually.");
       } else {
-        setAiSuggestions(data);
+        setAiSuggestions(data.suggestions);
       }
     } catch {
       setAiError("Could not connect to AI. Fill in the form manually.");
@@ -147,14 +155,20 @@ export default function SellPage() {
     }
   }
 
-  function acceptSuggestion(field: keyof FormData, value: string) {
-    set(field, value);
-    setAiSuggestions((prev) => {
-      if (!prev) return null;
-      const next = { ...prev };
-      delete next[field];
-      return Object.keys(next).length === 0 ? null : next;
-    });
+  function applySuggestedTitle(val: string) {
+    set("title", val);
+    setAiSuggestions((prev) => (prev ? { ...prev, suggestedTitle: undefined } : null));
+  }
+
+  function applySuggestedDescription(val: string) {
+    set("description", val);
+    setAiSuggestions((prev) => (prev ? { ...prev, suggestedDescription: undefined } : null));
+  }
+
+  function applySuggestedKeywords(keywords: string[]) {
+    const kwStr = keywords.join(", ");
+    set("tags", form.tags ? `${form.tags}, ${kwStr}` : kwStr);
+    setAiSuggestions((prev) => (prev ? { ...prev, suggestedKeywords: undefined } : null));
   }
 
   /* ── Preview → Publish ──────────────────────────────────────────── */
@@ -379,25 +393,72 @@ export default function SellPage() {
               <p className="text-error text-xs mt-3">{aiError}</p>
             )}
 
-            {aiSuggestions && Object.keys(aiSuggestions).length > 0 && (
+            {aiSuggestions && (
               <div className="mt-4 space-y-3">
                 <p className="text-xs text-on-surface-variant font-semibold uppercase tracking-wide">
                   AI Suggestions — review and accept each one:
                 </p>
-                {Object.entries(aiSuggestions).map(([field, value]) => (
-                  <div key={field} className="bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex items-start gap-3">
-                    <div className="flex-1">
-                      <span className="text-[10px] text-outline uppercase tracking-wide font-semibold">{field}</span>
-                      <p className="text-sm text-on-surface mt-0.5">{String(value)}</p>
+
+                {aiSuggestions.suggestedTitle && (
+                  <div className="bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <span className="text-[10px] text-outline uppercase tracking-wide font-semibold block">Suggested Title</span>
+                      <p className="text-sm text-on-surface font-medium mt-0.5">{aiSuggestions.suggestedTitle}</p>
                     </div>
                     <button
-                      onClick={() => acceptSuggestion(field as keyof FormData, String(value))}
+                      type="button"
+                      onClick={() => applySuggestedTitle(aiSuggestions.suggestedTitle!)}
                       className="shrink-0 text-xs font-semibold text-secondary hover:text-primary transition-colors underline underline-offset-2 mt-1"
                     >
-                      Accept
+                      Apply
                     </button>
                   </div>
-                ))}
+                )}
+
+                {aiSuggestions.suggestedDescription && (
+                  <div className="bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <span className="text-[10px] text-outline uppercase tracking-wide font-semibold block">Suggested Description</span>
+                      <p className="text-sm text-on-surface leading-relaxed mt-0.5">{aiSuggestions.suggestedDescription}</p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => applySuggestedDescription(aiSuggestions.suggestedDescription!)}
+                      className="shrink-0 text-xs font-semibold text-secondary hover:text-primary transition-colors underline underline-offset-2 mt-1"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                )}
+
+                {aiSuggestions.suggestedKeywords && aiSuggestions.suggestedKeywords.length > 0 && (
+                  <div className="bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <span className="text-[10px] text-outline uppercase tracking-wide font-semibold block">Suggested Tags / Keywords</span>
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        {aiSuggestions.suggestedKeywords.map((kw, idx) => (
+                          <span key={idx} className="px-2 py-0.5 bg-surface-container text-on-surface text-xs rounded">
+                            #{kw}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => applySuggestedKeywords(aiSuggestions.suggestedKeywords!)}
+                      className="shrink-0 text-xs font-semibold text-secondary hover:text-primary transition-colors underline underline-offset-2 mt-1"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                )}
+
+                {aiSuggestions.pricingNote && (
+                  <div className="bg-secondary-container/40 rounded-lg border border-secondary-container p-3">
+                    <span className="text-[10px] text-secondary uppercase tracking-wide font-semibold block">Pricing Insight</span>
+                    <p className="text-xs text-on-surface mt-0.5 leading-relaxed">{aiSuggestions.pricingNote}</p>
+                  </div>
+                )}
               </div>
             )}
           </div>

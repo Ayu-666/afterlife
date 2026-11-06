@@ -15,7 +15,13 @@
     "available": true,
     "createdAt": "2024-11-01T08:00:00Z",
     "isDemo": true,
-    "tags": ["vintage", "japanese", "indigo", "jacket", "sashiko"]
+    "tags": [
+      "vintage",
+      "japanese",
+      "indigo",
+      "jacket",
+      "sashiko"
+    ]
   },
   {
     "id": "rw-002",
@@ -33,7 +39,13 @@
     "available": true,
     "createdAt": "2024-10-28T10:00:00Z",
     "isDemo": true,
-    "tags": ["saree", "silk", "kanjivaram", "vintage", "zari"]
+    "tags": [
+      "saree",
+      "silk",
+      "kanjivaram",
+      "vintage",
+      "zari"
+    ]
   },
   {
     "id": "rw-003",
@@ -51,7 +63,13 @@
     "available": true,
     "createdAt": "2024-10-20T12:00:00Z",
     "isDemo": true,
-    "tags": ["denim", "jacket", "selvedge", "japanese", "vintage"]
+    "tags": [
+      "denim",
+      "jacket",
+      "selvedge",
+      "japanese",
+      "vintage"
+    ]
   },
   {
     "id": "rw-004",
@@ -69,7 +87,13 @@
     "available": true,
     "createdAt": "2024-10-15T09:00:00Z",
     "isDemo": true,
-    "tags": ["muji", "overshirt", "cotton", "selvedge", "archive"]
+    "tags": [
+      "muji",
+      "overshirt",
+      "cotton",
+      "selvedge",
+      "archive"
+    ]
   },
   {
     "id": "rw-005",
@@ -87,7 +111,13 @@
     "available": true,
     "createdAt": "2024-10-10T11:00:00Z",
     "isDemo": true,
-    "tags": ["phulkari", "dupatta", "embroidery", "punjab", "handmade"]
+    "tags": [
+      "phulkari",
+      "dupatta",
+      "embroidery",
+      "punjab",
+      "handmade"
+    ]
   },
   {
     "id": "rw-006",
@@ -105,7 +135,13 @@
     "available": true,
     "createdAt": "2024-09-28T14:00:00Z",
     "isDemo": true,
-    "tags": ["leather", "tote", "bag", "vegetable-tanned", "handmade"]
+    "tags": [
+      "leather",
+      "tote",
+      "bag",
+      "vegetable-tanned",
+      "handmade"
+    ]
   },
   {
     "id": "ro-001",
@@ -123,7 +159,13 @@
     "available": true,
     "createdAt": "2024-11-02T07:00:00Z",
     "isDemo": true,
-    "tags": ["sheesham", "stool", "handmade", "joinery", "wood"]
+    "tags": [
+      "sheesham",
+      "stool",
+      "handmade",
+      "joinery",
+      "wood"
+    ]
   },
   {
     "id": "ro-002",
@@ -141,7 +183,13 @@
     "available": true,
     "createdAt": "2024-10-30T09:00:00Z",
     "isDemo": true,
-    "tags": ["terracotta", "vase", "pottery", "handthrown", "khurja"]
+    "tags": [
+      "terracotta",
+      "vase",
+      "pottery",
+      "handthrown",
+      "khurja"
+    ]
   },
   {
     "id": "ro-003",
@@ -159,7 +207,13 @@
     "available": true,
     "createdAt": "2024-10-25T10:00:00Z",
     "isDemo": true,
-    "tags": ["dhurrie", "rug", "wool", "handwoven", "mirzapur"]
+    "tags": [
+      "dhurrie",
+      "rug",
+      "wool",
+      "handwoven",
+      "mirzapur"
+    ]
   },
   {
     "id": "ro-004",
@@ -177,7 +231,13 @@
     "available": true,
     "createdAt": "2024-10-20T11:00:00Z",
     "isDemo": true,
-    "tags": ["silver", "jhumka", "earrings", "filigree", "rajasthan"]
+    "tags": [
+      "silver",
+      "jhumka",
+      "earrings",
+      "filigree",
+      "rajasthan"
+    ]
   },
   {
     "id": "ro-005",
@@ -195,7 +255,13 @@
     "available": true,
     "createdAt": "2024-10-15T08:00:00Z",
     "isDemo": true,
-    "tags": ["madhubani", "painting", "mithila", "art", "handmade"]
+    "tags": [
+      "madhubani",
+      "painting",
+      "mithila",
+      "art",
+      "handmade"
+    ]
   },
   {
     "id": "ro-006",
@@ -213,7 +279,13 @@
     "available": true,
     "createdAt": "2024-10-05T09:00:00Z",
     "isDemo": true,
-    "tags": ["dhokra", "brass", "figurine", "tribal", "lost-wax"]
+    "tags": [
+      "dhokra",
+      "brass",
+      "figurine",
+      "tribal",
+      "lost-wax"
+    ]
   },
   {
     "id": "rr-001",
@@ -231,7 +303,13 @@
     "available": true,
     "createdAt": "2024-11-01T10:00:00Z",
     "isDemo": true,
-    "tags": ["physics", "textbook", "halliday", "resnick", "jee"]
+    "tags": [
+      "physics",
+      "textbook",
+      "halliday",
+      "resnick",
+      "jee"
+    ]
   },
   {
     "id": "rr-002",
@@ -249,7 +327,13 @@
     "available": true,
     "createdAt": "2024-10-28T11:00:00Z",
     "isDemo": true,
-    "tags": ["architecture", "book", "marg", "vijayanagara", "rare"]
+    "tags": [
+      "architecture",
+      "book",
+      "marg",
+      "vijayanagara",
+      "rare"
+    ]
   },
   {
     "id": "rr-003",
@@ -267,7 +351,13 @@
     "available": true,
     "createdAt": "2024-10-22T09:00:00Z",
     "isDemo": true,
-    "tags": ["algorithms", "CLRS", "computer-science", "textbook", "programming"]
+    "tags": [
+      "algorithms",
+      "CLRS",
+      "computer-science",
+      "textbook",
+      "programming"
+    ]
   },
   {
     "id": "rr-004",
@@ -285,7 +375,13 @@
     "available": true,
     "createdAt": "2024-10-18T12:00:00Z",
     "isDemo": true,
-    "tags": ["manto", "urdu", "literature", "short-stories", "classic"]
+    "tags": [
+      "manto",
+      "urdu",
+      "literature",
+      "short-stories",
+      "classic"
+    ]
   },
   {
     "id": "rr-005",
@@ -303,7 +399,13 @@
     "available": true,
     "createdAt": "2024-10-10T10:00:00Z",
     "isDemo": true,
-    "tags": ["chemistry", "organic", "JEE", "morrison", "boyd"]
+    "tags": [
+      "chemistry",
+      "organic",
+      "JEE",
+      "morrison",
+      "boyd"
+    ]
   },
   {
     "id": "rr-006",
@@ -321,7 +423,13 @@
     "available": true,
     "createdAt": "2024-09-30T13:00:00Z",
     "isDemo": true,
-    "tags": ["arundhati", "roy", "novel", "booker", "first-edition"]
+    "tags": [
+      "arundhati",
+      "roy",
+      "novel",
+      "booker",
+      "first-edition"
+    ]
   },
   {
     "id": "rm-001",
@@ -339,7 +447,13 @@
     "available": true,
     "createdAt": "2024-11-01T08:00:00Z",
     "isDemo": true,
-    "tags": ["teak", "chair", "upcycled", "chandigarh", "vintage"]
+    "tags": [
+      "teak",
+      "chair",
+      "upcycled",
+      "chandigarh",
+      "vintage"
+    ]
   },
   {
     "id": "rm-002",
@@ -357,7 +471,13 @@
     "available": true,
     "createdAt": "2024-10-27T09:00:00Z",
     "isDemo": true,
-    "tags": ["lamp", "oak", "brass", "upcycled", "railway"]
+    "tags": [
+      "lamp",
+      "oak",
+      "brass",
+      "upcycled",
+      "railway"
+    ]
   },
   {
     "id": "rm-003",
@@ -375,7 +495,13 @@
     "available": true,
     "createdAt": "2024-10-20T10:00:00Z",
     "isDemo": true,
-    "tags": ["bookshelf", "industrial", "pipe", "mango-wood", "upcycled"]
+    "tags": [
+      "bookshelf",
+      "industrial",
+      "pipe",
+      "mango-wood",
+      "upcycled"
+    ]
   },
   {
     "id": "rm-004",
@@ -393,7 +519,13 @@
     "available": true,
     "createdAt": "2024-10-15T11:00:00Z",
     "isDemo": true,
-    "tags": ["tapestry", "patchwork", "kantha", "khadi", "upcycled"]
+    "tags": [
+      "tapestry",
+      "patchwork",
+      "kantha",
+      "khadi",
+      "upcycled"
+    ]
   },
   {
     "id": "rm-005",
@@ -411,7 +543,13 @@
     "available": true,
     "createdAt": "2024-10-05T10:00:00Z",
     "isDemo": true,
-    "tags": ["planters", "tin", "upcycled", "garden", "succulents"]
+    "tags": [
+      "planters",
+      "tin",
+      "upcycled",
+      "garden",
+      "succulents"
+    ]
   },
   {
     "id": "rm-006",
@@ -429,7 +567,13 @@
     "available": true,
     "createdAt": "2024-09-25T09:00:00Z",
     "isDemo": true,
-    "tags": ["teak", "chair", "cane", "dining", "upcycled"]
+    "tags": [
+      "teak",
+      "chair",
+      "cane",
+      "dining",
+      "upcycled"
+    ]
   },
   {
     "id": "ru-001",
@@ -447,7 +591,13 @@
     "available": true,
     "createdAt": "2024-11-02T08:00:00Z",
     "isDemo": true,
-    "tags": ["sony", "headphones", "noise-cancelling", "refurbished", "wireless"]
+    "tags": [
+      "sony",
+      "headphones",
+      "noise-cancelling",
+      "refurbished",
+      "wireless"
+    ]
   },
   {
     "id": "ru-002",
@@ -465,7 +615,13 @@
     "available": true,
     "createdAt": "2024-10-25T10:00:00Z",
     "isDemo": true,
-    "tags": ["yashica", "camera", "35mm", "rangefinder", "film"]
+    "tags": [
+      "yashica",
+      "camera",
+      "35mm",
+      "rangefinder",
+      "film"
+    ]
   },
   {
     "id": "ru-003",
@@ -483,7 +639,13 @@
     "available": true,
     "createdAt": "2024-10-20T09:00:00Z",
     "isDemo": true,
-    "tags": ["macbook", "apple", "laptop", "refurbished", "M1"]
+    "tags": [
+      "macbook",
+      "apple",
+      "laptop",
+      "refurbished",
+      "M1"
+    ]
   },
   {
     "id": "ru-004",
@@ -501,7 +663,13 @@
     "available": true,
     "createdAt": "2024-10-15T11:00:00Z",
     "isDemo": true,
-    "tags": ["godrej", "almirah", "wardrobe", "restored", "steel"]
+    "tags": [
+      "godrej",
+      "almirah",
+      "wardrobe",
+      "restored",
+      "steel"
+    ]
   },
   {
     "id": "ru-005",
@@ -519,7 +687,13 @@
     "available": true,
     "createdAt": "2024-10-10T12:00:00Z",
     "isDemo": true,
-    "tags": ["keyboard", "mechanical", "HHKB", "topre", "mechanical"]
+    "tags": [
+      "keyboard",
+      "mechanical",
+      "HHKB",
+      "topre",
+      "mechanical"
+    ]
   },
   {
     "id": "ru-006",
@@ -537,7 +711,13 @@
     "available": true,
     "createdAt": "2024-09-28T10:00:00Z",
     "isDemo": true,
-    "tags": ["lamp", "ceramic", "linen", "home", "pre-owned"]
+    "tags": [
+      "lamp",
+      "ceramic",
+      "linen",
+      "home",
+      "pre-owned"
+    ]
   },
   {
     "id": "rs-001",
@@ -555,7 +735,13 @@
     "available": true,
     "createdAt": "2024-11-01T07:00:00Z",
     "isDemo": true,
-    "tags": ["cotton", "fabric", "organic", "deadstock", "textile"]
+    "tags": [
+      "cotton",
+      "fabric",
+      "organic",
+      "deadstock",
+      "textile"
+    ]
   },
   {
     "id": "rs-002",
@@ -573,7 +759,13 @@
     "available": true,
     "createdAt": "2024-10-28T08:00:00Z",
     "isDemo": true,
-    "tags": ["leather", "offcuts", "vegetable-tanned", "dharavi", "craft"]
+    "tags": [
+      "leather",
+      "offcuts",
+      "vegetable-tanned",
+      "dharavi",
+      "craft"
+    ]
   },
   {
     "id": "rs-003",
@@ -591,7 +783,13 @@
     "available": true,
     "createdAt": "2024-10-22T09:00:00Z",
     "isDemo": true,
-    "tags": ["indigo", "dye", "natural", "fabric", "cooperative"]
+    "tags": [
+      "indigo",
+      "dye",
+      "natural",
+      "fabric",
+      "cooperative"
+    ]
   },
   {
     "id": "rs-004",
@@ -609,7 +807,13 @@
     "available": true,
     "createdAt": "2024-10-18T10:00:00Z",
     "isDemo": true,
-    "tags": ["kraft", "paper", "packaging", "recycled", "surplus"]
+    "tags": [
+      "kraft",
+      "paper",
+      "packaging",
+      "recycled",
+      "surplus"
+    ]
   },
   {
     "id": "rs-005",
@@ -627,7 +831,13 @@
     "available": true,
     "createdAt": "2024-10-10T11:00:00Z",
     "isDemo": true,
-    "tags": ["loom", "handloom", "weaving", "varanasi", "textile"]
+    "tags": [
+      "loom",
+      "handloom",
+      "weaving",
+      "varanasi",
+      "textile"
+    ]
   },
   {
     "id": "rs-006",
@@ -645,6 +855,1528 @@
     "available": true,
     "createdAt": "2024-09-28T08:00:00Z",
     "isDemo": true,
-    "tags": ["beeswax", "natural", "apiary", "craft", "surplus"]
+    "tags": [
+      "beeswax",
+      "natural",
+      "apiary",
+      "craft",
+      "surplus"
+    ]
+  },
+  {
+    "id": "rw-007",
+    "title": "Vintage Levi's 501 Straight Leg Jeans — Made in USA 1994",
+    "description": "Classic medium wash authentic 1994 Levi's 501s with genuine button fly. Pure 100% heavyweight cotton denim with natural fading across knees and whiskering at hips. No synthetic stretch. Freshly sanitised and hem intact.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 1850,
+    "originalPrice": 5200,
+    "condition": "Good",
+    "sellerName": "Tanvi Mathur",
+    "location": "Bandra West, Mumbai",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-02T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "jeans",
+      "levis",
+      "denim",
+      "vintage",
+      "pants",
+      "clothing"
+    ]
+  },
+  {
+    "id": "rw-008",
+    "title": "Pure Mulberry Silk Hand-Blocked Printed Kurta — Size M",
+    "description": "Gently pre-owned Bagru natural dye block-printed pure mulberry silk kurta. Rich madder red and natural black motifs. Side slits, mother-of-pearl buttons, breathable luxury weave.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 1250,
+    "originalPrice": 3800,
+    "condition": "Excellent",
+    "sellerName": "Pooja Hegde",
+    "location": "Jayanagar, Bangalore",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-02T14:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "kurta",
+      "silk",
+      "handblock",
+      "clothing",
+      "ethnic",
+      "women"
+    ]
+  },
+  {
+    "id": "rw-009",
+    "title": "Classic Beige Trench Coat — Double Breasted Heavy Twill",
+    "description": "Timeless 1990s double-breasted cotton-gabardine trench coat with storm flap, buckled waist belt, and tortoiseshell buttons. Water-resistant structured drape.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 2950,
+    "originalPrice": 9500,
+    "condition": "Mint",
+    "sellerName": "Rohan Varma",
+    "location": "Vasant Kunj, New Delhi",
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-03T09:15:00Z",
+    "isDemo": true,
+    "tags": [
+      "trench-coat",
+      "coat",
+      "jacket",
+      "vintage",
+      "outerwear",
+      "clothing"
+    ]
+  },
+  {
+    "id": "rw-010",
+    "title": "Handmade Khadi Cotton Oversized Shirt — Chalk White",
+    "description": "Hand-spun and hand-woven indigenous organic khadi cotton shirt. Natural horn buttons, drop shoulder relax fit, pre-washed for soft cloud-like feel.",
+    "category": "RE:WEAR",
+    "listingType": "handmade",
+    "price": 1450,
+    "originalPrice": 3200,
+    "condition": "New",
+    "sellerName": "Vimla Craft Trust",
+    "location": "Wardha, Maharashtra",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-03T12:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "shirt",
+      "khadi",
+      "cotton",
+      "handmade",
+      "unisex",
+      "minimal"
+    ]
+  },
+  {
+    "id": "rw-011",
+    "title": "Goodyear-Welted Leather Chelsea Boots — Hand-Polished Tan",
+    "description": "Resoleable Goodyear-welted full-grain pull-up leather Chelsea boots. Elasticated side gussets, stacked leather heel with rubber half-sole. UK 8 / EU 42.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 3600,
+    "originalPrice": 8900,
+    "condition": "Good",
+    "sellerName": "Aditya Nair",
+    "location": "Koramangala, Bangalore",
+    "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-03T16:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "boots",
+      "leather",
+      "shoes",
+      "chelsea",
+      "footwear",
+      "men"
+    ]
+  },
+  {
+    "id": "rw-012",
+    "title": "Hand-Knitted Pure Merino Wool Cardigan — Heather Sage",
+    "description": "Chunky cable-knit relaxed cardigan hand-knitted from 100% undyed Himalayan Merino wool. Solid wooden toggle closures, deep patch pockets, ultra-warm.",
+    "category": "RE:WEAR",
+    "listingType": "handmade",
+    "price": 2750,
+    "originalPrice": 6500,
+    "condition": "Mint",
+    "sellerName": "Kullu Wool Guild",
+    "location": "Manali, Himachal Pradesh",
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-04T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "cardigan",
+      "sweater",
+      "wool",
+      "knitwear",
+      "handmade",
+      "winter"
+    ]
+  },
+  {
+    "id": "rw-013",
+    "title": "Vintage 1970s Acetate Tortoiseshell Sunglasses — UV400",
+    "description": "Original 1970s Italian deadstock cellulose acetate frame with mineral glass G15 green lenses. Five-barrel hinges, zero distortion, unisex classic silhouette.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 1650,
+    "originalPrice": 4800,
+    "condition": "Mint",
+    "sellerName": "Tara Sen",
+    "location": "Park Street, Kolkata",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-04T14:20:00Z",
+    "isDemo": true,
+    "tags": [
+      "sunglasses",
+      "vintage",
+      "accessories",
+      "eyewear",
+      "retro"
+    ]
+  },
+  {
+    "id": "rw-014",
+    "title": "Pure French Flax Linen Trousers — Oatmeal Wide Leg (Size 32)",
+    "description": "Breathable relaxed wide-leg trousers tailored in 100% European flax linen. Elasticated drawstring waist, deep trouser pockets, clean single welt rear pocket.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 1350,
+    "originalPrice": 3400,
+    "condition": "Excellent",
+    "sellerName": "Nikhil Joshi",
+    "location": "Pune, Maharashtra",
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-04T18:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "linen",
+      "trousers",
+      "pants",
+      "summer",
+      "sustainable",
+      "clothing"
+    ]
+  },
+  {
+    "id": "rw-015",
+    "title": "Heavyweight Boxy Graphic Tee — 280 GSM Organic Cotton (Size M)",
+    "description": "Thick structured 280 GSM combed organic cotton t-shirt with subtle water-based screenprint. Tight rib-knit crewneck, reinforced twin-needle stitching.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 650,
+    "originalPrice": 1800,
+    "condition": "Good",
+    "sellerName": "Kunal Mehra",
+    "location": "Hauz Khas, New Delhi",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-05T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "t-shirt",
+      "tee",
+      "cotton",
+      "streetwear",
+      "clothing",
+      "casual"
+    ]
+  },
+  {
+    "id": "rw-016",
+    "title": "Canvas & Leather Weekender Duffle Bag — Olive Drab",
+    "description": "Military-spec 18oz washed cotton canvas travel duffle with oiled harness leather handles and brass YKK dual zip. Includes detachable webbing shoulder strap.",
+    "category": "RE:WEAR",
+    "listingType": "pre_owned",
+    "price": 2600,
+    "originalPrice": 6200,
+    "condition": "Excellent",
+    "sellerName": "Siddharth Rao",
+    "location": "Alwarpet, Chennai",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+    "fallbackImage": "/images/fallback-rewear.svg",
+    "available": true,
+    "createdAt": "2024-11-05T12:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "bag",
+      "duffle",
+      "canvas",
+      "leather",
+      "travel",
+      "accessories"
+    ]
+  },
+  {
+    "id": "ro-007",
+    "title": "Hand-painted Blue Pottery Coaster Set of 4 — Jaipur Ceramic",
+    "description": "Traditional Jaipur quartz blue pottery coaster set with cobalt and turquoise floral motifs. Backed with natural cork to protect tables. 100% handcrafted.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 380,
+    "originalPrice": 750,
+    "condition": "New",
+    "sellerName": "Sita Devi Ceramics",
+    "location": "Jaipur, Rajasthan",
+    "image": "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-01T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "pottery",
+      "coasters",
+      "handmade",
+      "jaipur",
+      "gift",
+      "decor",
+      "craft"
+    ]
+  },
+  {
+    "id": "ro-008",
+    "title": "Natural Terracotta Tea-light Diya Holders (Set of 6)",
+    "description": "Wheel-thrown porous terracotta tea-light holders with delicate sunburst cut-outs that cast warm ambient shadows. Fired in traditional wood kilns.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 320,
+    "originalPrice": 600,
+    "condition": "New",
+    "sellerName": "Mitti Kala Kendra",
+    "location": "Khurja, Uttar Pradesh",
+    "image": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-01T12:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "terracotta",
+      "diya",
+      "candles",
+      "handmade",
+      "gift",
+      "decor",
+      "festive"
+    ]
+  },
+  {
+    "id": "ro-009",
+    "title": "Kutch Hand-Embroidered Coin Pouch with Mirror Work",
+    "description": "Intricately embroidered cotton pouch handcrafted by Rabari artisan women in Kutch. Genuine glass mirror inlays, silk tassel zipper pull, cotton lining.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 290,
+    "originalPrice": 550,
+    "condition": "New",
+    "sellerName": "Kutch Kala Mandal",
+    "location": "Bhuj, Gujarat",
+    "image": "https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-02T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "embroidered",
+      "pouch",
+      "kutch",
+      "handmade",
+      "gift",
+      "handloom",
+      "accessories"
+    ]
+  },
+  {
+    "id": "ro-010",
+    "title": "Hand-beaten Brass Temple Bell Keychain",
+    "description": "Solid bell-metal brass mini temple bell cast with traditional lost-wax technique. Clear resonant chime, hand-hammered finish on solid brass loop ring.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 450,
+    "originalPrice": 850,
+    "condition": "New",
+    "sellerName": "Devendra Swamy",
+    "location": "Thanjavur, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-02T15:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "brass",
+      "bell",
+      "keychain",
+      "handmade",
+      "gift",
+      "traditional",
+      "craft"
+    ]
+  },
+  {
+    "id": "ro-011",
+    "title": "Hand-turned Mango Wood Salad Server Set — Food Safe Oil",
+    "description": "Pair of ergonomic salad tosser spoons carved from naturally fallen orchard mango timber. Treated with pure cold-pressed coconut oil finish.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 520,
+    "originalPrice": 1100,
+    "condition": "New",
+    "sellerName": "Saharanpur Woodcraft Guild",
+    "location": "Saharanpur, Uttar Pradesh",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-03T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "wood",
+      "cutlery",
+      "kitchen",
+      "handmade",
+      "gift",
+      "mango-wood"
+    ]
+  },
+  {
+    "id": "ro-012",
+    "title": "Handmade Dokra Brass Tribal Candle Stand",
+    "description": "4000-year-old non-ferrous lost wax brass casting crafted by Bastar artisan family. Depicts tribal folklore motifs with rustic golden patina.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 1100,
+    "originalPrice": 2400,
+    "condition": "Mint",
+    "sellerName": "Bastar Tribal Crafts",
+    "location": "Jagdalpur, Chhattisgarh",
+    "image": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-03T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "dokra",
+      "brass",
+      "tribal",
+      "candle",
+      "decor",
+      "handmade",
+      "artisan"
+    ]
+  },
+  {
+    "id": "ro-013",
+    "title": "Channapatna Wooden Stacking Toy & Decor Owl",
+    "description": "Natural ivory wood hand-turned and lacquered with organic vegetable and turmeric dyes. Non-toxic, silky smooth heritage craft from Karnataka.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 490,
+    "originalPrice": 950,
+    "condition": "New",
+    "sellerName": "Venkatesh Toys",
+    "location": "Channapatna, Karnataka",
+    "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-04T09:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "channapatna",
+      "wood",
+      "toy",
+      "decor",
+      "handmade",
+      "gift",
+      "karnataka"
+    ]
+  },
+  {
+    "id": "ro-014",
+    "title": "Sterling 925 Silver Tribal Nose Pin & Stud — Push Back",
+    "description": "Handcrafted pure 92.5 sterling silver nose pin featuring traditional floral engraving. Hypoallergenic, lead and cadmium free.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 480,
+    "originalPrice": 1200,
+    "condition": "New",
+    "sellerName": "Silver Legacy",
+    "location": "Pushkar, Rajasthan",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-04T13:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "jewellery",
+      "silver",
+      "nose-pin",
+      "handmade",
+      "gift",
+      "accessories"
+    ]
+  },
+  {
+    "id": "ro-015",
+    "title": "Hand-poured Soy Wax Scented Candle in Terracotta Pot",
+    "description": "100% natural soy wax infused with pure Kannauj vetiver (khus) essential oil. Poured into reusable unglazed artisan clay bowl with wooden crackling wick.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 420,
+    "originalPrice": 850,
+    "condition": "New",
+    "sellerName": "Ananda Botanicals",
+    "location": "Kannauj, Uttar Pradesh",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-05T10:15:00Z",
+    "isDemo": true,
+    "tags": [
+      "candle",
+      "terracotta",
+      "aromatherapy",
+      "handmade",
+      "gift",
+      "hostel",
+      "decor"
+    ]
+  },
+  {
+    "id": "ro-016",
+    "title": "Hand-carved Sheesham Wood Incense Burner Box",
+    "description": "Aroma tower box hand-chiseled from sustainably harvested Indian rosewood with brass inlay stars. Concealed ash catcher and storage chamber.",
+    "category": "ROOTS",
+    "listingType": "handmade",
+    "price": 460,
+    "originalPrice": 900,
+    "condition": "New",
+    "sellerName": "Heritage Rosewood",
+    "location": "Hoshiarpur, Punjab",
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800&q=80",
+    "fallbackImage": "/images/fallback-roots.svg",
+    "available": true,
+    "createdAt": "2024-11-05T15:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "incense",
+      "wood",
+      "handmade",
+      "gift",
+      "decor",
+      "sheesham"
+    ]
+  },
+  {
+    "id": "rr-007",
+    "title": "Higher Engineering Mathematics — B.S. Grewal (43rd Edition)",
+    "description": "Comprehensive engineering math textbook for all university curricula and GATE. Covers linear algebra, calculus, differential equations, Fourier series, and probability. Clean margins with minimal pencil marks.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 240,
+    "originalPrice": 750,
+    "condition": "Good",
+    "sellerName": "Aman Gupta",
+    "location": "Kalu Sarai, New Delhi",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-01T08:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "math",
+      "mathematics",
+      "engineering",
+      "textbook",
+      "grewal",
+      "gate",
+      "student"
+    ]
+  },
+  {
+    "id": "rr-008",
+    "title": "Engineering Mechanics: Statics and Dynamics — R.C. Hibbeler",
+    "description": "Standard foundation textbook for mechanical, civil, and aerospace branches. Excellent diagrams and step-by-step problem sets. Minor cover shelf wear, intact binding.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 260,
+    "originalPrice": 850,
+    "condition": "Good",
+    "sellerName": "Varun Reddy",
+    "location": "Gachibowli, Hyderabad",
+    "image": "https://images.unsplash.com/photo-1532012164546-f432f2e3edd4?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-01T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "mechanics",
+      "engineering",
+      "textbook",
+      "hibbeler",
+      "physics",
+      "student"
+    ]
+  },
+  {
+    "id": "rr-009",
+    "title": "A Course in Electrical and Electronic Measurements — A.K. Sawhney",
+    "description": "Authoritative Indian textbook on measurement instrumentation, bridges, transducers, and signal conditioning. Essential for EE and ECE students. All pages intact.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 290,
+    "originalPrice": 795,
+    "condition": "Good",
+    "sellerName": "Prateek Sharma",
+    "location": "Roorkee, Uttarakhand",
+    "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-02T08:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "electrical",
+      "engineering",
+      "textbook",
+      "sawhney",
+      "electronics",
+      "measurements"
+    ]
+  },
+  {
+    "id": "rr-010",
+    "title": "Data Structures and Algorithms in Python — Goodrich, Tamassia & Goldwasser",
+    "description": "Rigorous computer science textbook presenting DSA using clean object-oriented Python. Covers Big-O analysis, trees, hash tables, graphs, and dynamic programming.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 420,
+    "originalPrice": 899,
+    "condition": "Excellent",
+    "sellerName": "Sanya Roy",
+    "location": "Koramangala, Bangalore",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-02T13:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "dsa",
+      "data-structures",
+      "algorithms",
+      "python",
+      "textbook",
+      "programming",
+      "computer-science"
+    ]
+  },
+  {
+    "id": "rr-011",
+    "title": "Data Structures and Algorithm Analysis in C++ — Mark Allen Weiss (4th Ed)",
+    "description": "Classic DSA in C++ textbook covering templates, sorting, graph algorithms, and disjoint sets. Excellent for coding interview preparation and semester exams.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 390,
+    "originalPrice": 825,
+    "condition": "Excellent",
+    "sellerName": "Harsh Vardhan",
+    "location": "Powai, Mumbai",
+    "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-03T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "dsa",
+      "c++",
+      "cpp",
+      "algorithms",
+      "data-structures",
+      "textbook",
+      "programming"
+    ]
+  },
+  {
+    "id": "rr-012",
+    "title": "The C Programming Language — Brian Kernighan & Dennis Ritchie (2nd Ed)",
+    "description": "The definitive K&R C manual by the language creators. Compact, lucid explanations of pointers, memory models, structures, and UNIX system calls. Collector condition.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 220,
+    "originalPrice": 499,
+    "condition": "Good",
+    "sellerName": "Karthik Raja",
+    "location": "Adyar, Chennai",
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-03T15:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "c",
+      "programming",
+      "c-programming",
+      "kernighan",
+      "ritchie",
+      "textbook",
+      "coding"
+    ]
+  },
+  {
+    "id": "rr-013",
+    "title": "Operating System Concepts — Silberschatz, Galvin & Gagne (9th Ed)",
+    "description": "The renowned 'Dinosaur' operating systems book. In-depth treatment of process scheduling, virtual memory, concurrency, deadlock, and Linux/Windows internals.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 440,
+    "originalPrice": 950,
+    "condition": "Excellent",
+    "sellerName": "Meera Krishnan",
+    "location": "Vellore, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-04T08:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "operating-systems",
+      "os",
+      "silberschatz",
+      "textbook",
+      "computer-science",
+      "engineering"
+    ]
+  },
+  {
+    "id": "rr-014",
+    "title": "Database System Concepts — Korth, Silberschatz & Sudarshan (6th Ed)",
+    "description": "Standard university textbook on relational database design, SQL queries, relational algebra, indexing (B+ trees), ACID transactions, and normalization.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 460,
+    "originalPrice": 920,
+    "condition": "Good",
+    "sellerName": "Akash Singhal",
+    "location": "Noida, Uttar Pradesh",
+    "image": "https://images.unsplash.com/photo-1507842229452-78d10be97f26?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-04T12:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "dbms",
+      "database",
+      "sql",
+      "korth",
+      "textbook",
+      "computer-science"
+    ]
+  },
+  {
+    "id": "rr-015",
+    "title": "Computer Networking: A Top-Down Approach — Kurose & Ross (7th Ed)",
+    "description": "World-famous textbook taking readers from Application layer down to Physical layer. Covers HTTP, DNS, TCP congestion control, IP routing, and network security.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 490,
+    "originalPrice": 995,
+    "condition": "Excellent",
+    "sellerName": "Divya Nambiar",
+    "location": "Kochi, Kerala",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-05T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "computer-networks",
+      "networking",
+      "kurose",
+      "textbook",
+      "internet",
+      "engineering"
+    ]
+  },
+  {
+    "id": "rr-016",
+    "title": "Core Java Volume I: Fundamentals — Cay S. Horstmann (11th Ed)",
+    "description": "The authoritative, robust guide for serious programmers to Java 11+. Deep dive into streams, lambda expressions, generics, concurrency, and OOP principles.",
+    "category": "RE:READ",
+    "listingType": "pre_owned",
+    "price": 380,
+    "originalPrice": 850,
+    "condition": "Good",
+    "sellerName": "Rahul Bansal",
+    "location": "Sector 62, Gurgaon",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+    "fallbackImage": "/images/fallback-reread.svg",
+    "available": true,
+    "createdAt": "2024-11-05T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "java",
+      "programming",
+      "core-java",
+      "horstmann",
+      "textbook",
+      "coding"
+    ]
+  },
+  {
+    "id": "rm-007",
+    "title": "Upcycled Wine Bottle Warm LED Fairy Light Lamp",
+    "description": "Repurposed frosted emerald wine bottle converted into a warm 2700K ambient LED desk lamp with brass switch base. Perfect mood lighting for hostel and bedroom.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 390,
+    "originalPrice": 850,
+    "condition": "New",
+    "sellerName": "ReCraft Studio",
+    "location": "Hennur, Bangalore",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-01T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "lamp",
+      "decor",
+      "hostel",
+      "room",
+      "upcycled",
+      "lighting",
+      "affordable"
+    ]
+  },
+  {
+    "id": "rm-008",
+    "title": "Reclaimed Wood Desk Organizer & Phone Stand",
+    "description": "Handcrafted desktop caddy made from reclaimed demolition teak. Features slots for phone, pens, sticky notes, and spectacles. Natural beeswax finish.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 490,
+    "originalPrice": 950,
+    "condition": "New",
+    "sellerName": "Timber Revival",
+    "location": "Mysore, Karnataka",
+    "image": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-01T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "wood",
+      "organizer",
+      "desk",
+      "hostel",
+      "decor",
+      "upcycled",
+      "stand"
+    ]
+  },
+  {
+    "id": "rm-009",
+    "title": "Upcycled Cotton Macrame Hanging Plant Holder",
+    "description": "Boho-chic ceiling plant hanger hand-knotted from factory surplus 100% natural cotton cord. Suspends pots up to 8 inches in diameter. Ideal for small rooms.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 340,
+    "originalPrice": 650,
+    "condition": "New",
+    "sellerName": "Knot & Thread",
+    "location": "Pune, Maharashtra",
+    "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-02T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "macrame",
+      "planter",
+      "decor",
+      "hostel",
+      "room",
+      "upcycled",
+      "wall-hanging"
+    ]
+  },
+  {
+    "id": "rm-010",
+    "title": "Reclaimed Pine Pallet Coffee Table with Hairpin Legs",
+    "description": "Mid-century style low coffee table constructed from heat-treated shipping pallet timber. Sanded silky smooth with walnut stain and matte black steel hairpin legs.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 2600,
+    "originalPrice": 6500,
+    "condition": "Restored",
+    "sellerName": "Urban Joinery",
+    "location": "Whitefield, Bangalore",
+    "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986b88?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-02T16:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "table",
+      "coffee-table",
+      "furniture",
+      "wood",
+      "upcycled",
+      "decor"
+    ]
+  },
+  {
+    "id": "rm-011",
+    "title": "Upcycled Tyres Floor Pouf & Ottoman — Jute Rope Wrapped",
+    "description": "Discarded automobile tyre reinforced with marine plywood and tightly wrapped in thick natural golden jute rope. Firm comfortable floor seating for living rooms.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 1450,
+    "originalPrice": 3200,
+    "condition": "Restored",
+    "sellerName": "Circular Living Co.",
+    "location": "Indore, Madhya Pradesh",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-03T11:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "pouf",
+      "ottoman",
+      "seating",
+      "furniture",
+      "upcycled",
+      "jute"
+    ]
+  },
+  {
+    "id": "rm-012",
+    "title": "Repurposed Bicycle Wheel Wall Clock — Industrial Modern",
+    "description": "Salvaged 26-inch chrome bicycle rim and hub converted into an oversized statement wall clock with silent quartz sweep mechanism. Includes battery.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 1250,
+    "originalPrice": 2800,
+    "condition": "Restored",
+    "sellerName": "Velocraft India",
+    "location": "Ahmedabad, Gujarat",
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-03T15:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "clock",
+      "wall-clock",
+      "bicycle",
+      "decor",
+      "upcycled",
+      "industrial"
+    ]
+  },
+  {
+    "id": "rm-013",
+    "title": "Mosaic Mirrored Wall Frame — Broken Ceramic Tile Upcycling",
+    "description": "Handcrafted 12x12 inch entryway mirror framed with colourful shattered ceramic tiles and sea glass embedded in waterproof grout.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 780,
+    "originalPrice": 1600,
+    "condition": "New",
+    "sellerName": "Glass & Clay Workshop",
+    "location": "Pondicherry",
+    "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-04T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "mirror",
+      "mosaic",
+      "decor",
+      "hostel",
+      "room",
+      "upcycled",
+      "wall-art"
+    ]
+  },
+  {
+    "id": "rm-014",
+    "title": "Reclaimed Wood Floating Bookshelves (Set of 2) — 24 Inch",
+    "description": "Pair of heavy-duty floating wall shelves milled from salvaged ceiling joists. Includes heavy-gauge concealed steel brackets and mounting hardware.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 1150,
+    "originalPrice": 2400,
+    "condition": "Restored",
+    "sellerName": "Heritage Joinery",
+    "location": "Chandigarh",
+    "image": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-04T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "shelves",
+      "bookshelf",
+      "wood",
+      "furniture",
+      "upcycled",
+      "decor"
+    ]
+  },
+  {
+    "id": "rm-015",
+    "title": "Upcycled Denim Patchwork Cushion Covers (Set of 2)",
+    "description": "Pair of 16x16 inch decorative cushion covers stitched from offcuts of vintage denim jeans. Heavy brass metal zipper, stone-washed texture.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 550,
+    "originalPrice": 1200,
+    "condition": "New",
+    "sellerName": "Blue Stitch Revival",
+    "location": "Jaipur, Rajasthan",
+    "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-05T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "cushion",
+      "denim",
+      "decor",
+      "hostel",
+      "room",
+      "upcycled",
+      "textile"
+    ]
+  },
+  {
+    "id": "rm-016",
+    "title": "Reclaimed Teak Wood Desk Lamp with Edison Filament Bulb",
+    "description": "Cubical solid teak base crafted from vintage door frame offcuts. Fitted with braided fabric cable, inline rocker switch, and 4W amber Edison bulb.",
+    "category": "RE:MAKE",
+    "listingType": "upcycled",
+    "price": 950,
+    "originalPrice": 2100,
+    "condition": "Restored",
+    "sellerName": "Lumen Art Studio",
+    "location": "Kochi, Kerala",
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80",
+    "fallbackImage": "/images/fallback-remake.svg",
+    "available": true,
+    "createdAt": "2024-11-05T16:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "lamp",
+      "teak",
+      "lighting",
+      "decor",
+      "furniture",
+      "upcycled",
+      "edison"
+    ]
+  },
+  {
+    "id": "ru-007",
+    "title": "Sennheiser HD 206 Over-Ear Monitoring Headphones — Pre-Loved",
+    "description": "Lightweight, comfortable closed-back studio monitoring headphones. Crisp highs and punchy bass reproduction. Gold-plated 3.5mm plug with 6.3mm adapter. Sanitised earpads.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 890,
+    "originalPrice": 1990,
+    "condition": "Good",
+    "sellerName": "Deepak Chawla",
+    "location": "Indiranagar, Bangalore",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-01T10:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "headphones",
+      "sennheiser",
+      "audio",
+      "pre-owned",
+      "electronics",
+      "sound"
+    ]
+  },
+  {
+    "id": "ru-008",
+    "title": "Audio-Technica ATH-M20x Professional Studio Headphones",
+    "description": "Renowned 40mm rare-earth magnet drivers tuned for flat reference listening. Clean circumaural sound isolation. Cable and headband in excellent condition.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 2450,
+    "originalPrice": 4990,
+    "condition": "Excellent",
+    "sellerName": "Arjun Nambiar",
+    "location": "Koramangala, Bangalore",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-01T15:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "headphones",
+      "studio",
+      "audio-technica",
+      "pre-owned",
+      "audio",
+      "electronics"
+    ]
+  },
+  {
+    "id": "ru-009",
+    "title": "Logitech MX Master 2S Wireless Bluetooth Mouse — Graphite",
+    "description": "Ergonomic productivity mouse with hyper-fast scroll wheel, gesture button, and cross-computer Flow control. Dual connectivity: Bluetooth or Unifying receiver.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 2900,
+    "originalPrice": 6995,
+    "condition": "Good",
+    "sellerName": "Vikram Saxena",
+    "location": "Cyber City, Gurgaon",
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-02T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "mouse",
+      "logitech",
+      "wireless",
+      "electronics",
+      "pre-owned",
+      "computer"
+    ]
+  },
+  {
+    "id": "ru-010",
+    "title": "Dell UltraSharp 24-Inch IPS Monitor (U2415) — 1920x1200 16:10",
+    "description": "Ultra-thin bezel productivity display with 99% sRGB coverage. Height adjustable stand, pivot to portrait, HDMI and DisplayPort inputs. Zero dead pixels.",
+    "category": "RE:USE",
+    "listingType": "refurbished",
+    "price": 5800,
+    "originalPrice": 16500,
+    "condition": "Refurbished",
+    "sellerName": "TechCycle Lab",
+    "location": "Marathahalli, Bangalore",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-02T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "monitor",
+      "dell",
+      "display",
+      "screen",
+      "electronics",
+      "refurbished",
+      "computer"
+    ]
+  },
+  {
+    "id": "ru-011",
+    "title": "Keychron K2 Wireless Mechanical Keyboard — Gateron Brown Switches",
+    "description": "75% compact Mac/Windows layout with white LED backlighting and hot-swappable tactile Gateron Brown switches. Bluetooth 5.1 and Type-C wired modes.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 4500,
+    "originalPrice": 8499,
+    "condition": "Excellent",
+    "sellerName": "Naveen Raj",
+    "location": "HSR Layout, Bangalore",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-03T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "keyboard",
+      "mechanical-keyboard",
+      "keychron",
+      "electronics",
+      "pre-owned"
+    ]
+  },
+  {
+    "id": "ru-012",
+    "title": "JBL Flip 5 Waterproof Portable Bluetooth Speaker — Midnight Black",
+    "description": "Racetrack-shaped driver delivering powerful bass and 12-hour battery life. IPX7 waterproof rugged design. Tested and fully functional, includes Type-C cable.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 3400,
+    "originalPrice": 8999,
+    "condition": "Good",
+    "sellerName": "Alok Sengupta",
+    "location": "Salt Lake, Kolkata",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-03T13:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "speaker",
+      "bluetooth",
+      "jbl",
+      "audio",
+      "electronics",
+      "pre-owned"
+    ]
+  },
+  {
+    "id": "ru-013",
+    "title": "Kindle Paperwhite (10th Gen) — 8GB, Waterproof, 300 PPI",
+    "description": "Glare-free flush-front display that reads like real paper even in bright sunlight. Adjustable built-in backlight, weeks of battery. Factory reset and ready.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 4900,
+    "originalPrice": 12999,
+    "condition": "Excellent",
+    "sellerName": "Kavya Menon",
+    "location": "Ernakulam, Kochi",
+    "image": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-04T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "kindle",
+      "ereader",
+      "amazon",
+      "books",
+      "electronics",
+      "pre-owned"
+    ]
+  },
+  {
+    "id": "ru-014",
+    "title": "Apple Magic Keyboard 2 with Numeric Keypad — Space Grey",
+    "description": "Sleek rechargeable scissor-mechanism keyboard with extended layout, document navigation controls, and arrow keys. Connects via Bluetooth or Lightning.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 5200,
+    "originalPrice": 12900,
+    "condition": "Good",
+    "sellerName": "Gaurav Chopra",
+    "location": "Andheri West, Mumbai",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-04T15:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "keyboard",
+      "apple",
+      "magic-keyboard",
+      "wireless",
+      "electronics"
+    ]
+  },
+  {
+    "id": "ru-015",
+    "title": "Canon EF 50mm f/1.8 STM Prime Lens — Clean Optics",
+    "description": "Legendary 'nifty fifty' portrait prime lens. Fast f/1.8 aperture produces beautiful background bokeh in low light. Smooth STM autofocus, fungus-free glass.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 5600,
+    "originalPrice": 9995,
+    "condition": "Mint",
+    "sellerName": "Prashant Joshi",
+    "location": "Shivaji Nagar, Pune",
+    "image": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-05T09:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "lens",
+      "canon",
+      "camera",
+      "photography",
+      "electronics",
+      "pre-owned"
+    ]
+  },
+  {
+    "id": "ru-016",
+    "title": "Blue Yeti USB Microphone — Blackout Edition with Stand",
+    "description": "Industry-standard multi-pattern USB condenser microphone for podcasting, streaming, and vocals. Gain control, mute button, zero-latency headphone monitoring.",
+    "category": "RE:USE",
+    "listingType": "pre_owned",
+    "price": 5900,
+    "originalPrice": 12495,
+    "condition": "Good",
+    "sellerName": "Rishi Kapoor",
+    "location": "South Ex, New Delhi",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+    "fallbackImage": "/images/fallback-reuse.svg",
+    "available": true,
+    "createdAt": "2024-11-05T13:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "microphone",
+      "audio",
+      "streaming",
+      "usb",
+      "electronics",
+      "pre-owned"
+    ]
+  },
+  {
+    "id": "rs-007",
+    "title": "Recycled Corrugated Shipping Boxes — Bundle of 15 Flat-Packed",
+    "description": "Sturdy 3-ply kraft corrugated cardboard shipping boxes (10x8x6 inches). Flat-packed, clean factory surplus ideal for e-commerce, moving, or storage.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 250,
+    "originalPrice": 550,
+    "condition": "New",
+    "sellerName": "EcoPack Surplus",
+    "location": "Peenya, Bangalore",
+    "image": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-01T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "packaging",
+      "boxes",
+      "cardboard",
+      "surplus",
+      "shipping",
+      "material"
+    ]
+  },
+  {
+    "id": "rs-008",
+    "title": "Cotton Fabric Remnants Scrap Bag — 3kg Assorted Prints",
+    "description": "High-grade 100% cotton fabric cut-offs and ends of bolts from garment manufacturing. Assorted block prints, solids, and stripes for quilting and craft.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 420,
+    "originalPrice": 900,
+    "condition": "New",
+    "sellerName": "Tirupur Textile Hub",
+    "location": "Tirupur, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-01T13:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "fabric",
+      "cotton",
+      "scraps",
+      "surplus",
+      "craft",
+      "textiles",
+      "diy"
+    ]
+  },
+  {
+    "id": "rs-009",
+    "title": "Industrial Wooden Spools & Bobbins (Pack of 5)",
+    "description": "Authentic decommissioned wooden textile bobbins and thread spools from Surat powerlooms. Solid hardwood, vintage patina, ideal for DIY lamp bases and decor.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 350,
+    "originalPrice": 750,
+    "condition": "Good",
+    "sellerName": "Surat Mill Salvage",
+    "location": "Surat, Gujarat",
+    "image": "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-02T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "wood",
+      "spools",
+      "craft",
+      "surplus",
+      "industrial",
+      "vintage"
+    ]
+  },
+  {
+    "id": "rs-010",
+    "title": "Recycled Bubble Wrap Rolls — 50 Metres Clean Industrial Offcut",
+    "description": "Clean surplus bubble wrap roll from logistics centre. Heavy-duty 10mm air bubbles for fragile packing and cushioning. Waterproof and reusable.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 290,
+    "originalPrice": 650,
+    "condition": "New",
+    "sellerName": "LogiPack Surplus",
+    "location": "Bhiwandi, Maharashtra",
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-02T15:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "packaging",
+      "bubble-wrap",
+      "shipping",
+      "surplus",
+      "packing"
+    ]
+  },
+  {
+    "id": "rs-011",
+    "title": "Raw Natural Jute Burlap Roll — 10 Metres x 40 Inch",
+    "description": "Breathable heavy-gauge natural golden jute hessian fabric. Unbleached, biodegradable textile ideal for sackcraft, gardening weed barrier, and rustic decor.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 680,
+    "originalPrice": 1400,
+    "condition": "New",
+    "sellerName": "Bengal Jute Mills",
+    "location": "Howrah, West Bengal",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-03T09:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "jute",
+      "burlap",
+      "fabric",
+      "surplus",
+      "natural",
+      "eco-friendly"
+    ]
+  },
+  {
+    "id": "rs-012",
+    "title": "Heavy Cotton Canvas Duck Fabric Bolt — 8 Metres Olive Drab",
+    "description": "Tough 14oz water-repellent cotton duck canvas mill deadstock. Ideal for heavy tote bags, tool rolls, upholstery, and durable outdoor gear.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 1650,
+    "originalPrice": 3800,
+    "condition": "New",
+    "sellerName": "Coimbatore Mill End",
+    "location": "Coimbatore, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-03T14:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "canvas",
+      "fabric",
+      "cotton",
+      "deadstock",
+      "surplus",
+      "heavy-duty"
+    ]
+  },
+  {
+    "id": "rs-013",
+    "title": "Natural Portuguese Cork Sheets (Pack of 5) — 4mm Thick",
+    "description": "High-density natural agglomerated cork tile sheets (12x12 inches). Thermal and acoustic insulation, easily cut with craft blade for bulletin boards and coasters.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 490,
+    "originalPrice": 1100,
+    "condition": "New",
+    "sellerName": "EcoMaterials India",
+    "location": "Bommasandra, Bangalore",
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-04T11:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "cork",
+      "sheets",
+      "craft",
+      "material",
+      "diy",
+      "surplus"
+    ]
+  },
+  {
+    "id": "rs-014",
+    "title": "Handloom Cotton Yarn Cones (Lot of 4) — Indigo & Natural",
+    "description": "Spinning mill surplus cones of count 20s pure single-ply cotton yarn. Total weight 2.2kg, pre-wound for weaving, crochet, tufting, or macrame.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 750,
+    "originalPrice": 1800,
+    "condition": "New",
+    "sellerName": "Kancheepuram Spinners",
+    "location": "Kancheepuram, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-04T16:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "yarn",
+      "cotton",
+      "thread",
+      "weaving",
+      "craft",
+      "surplus"
+    ]
+  },
+  {
+    "id": "rs-015",
+    "title": "Screenprinting Wooden Squeegees & Mesh Frame Kit",
+    "description": "Surplus print studio equipment including two 70-durometer polyurethane squeegees and one 110-mesh hardwood framed silkscreen. Clean and ready to print.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 850,
+    "originalPrice": 1950,
+    "condition": "Good",
+    "sellerName": "Serigraphy Collective",
+    "location": "Dadar, Mumbai",
+    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-05T10:00:00Z",
+    "isDemo": true,
+    "tags": [
+      "screenprinting",
+      "printmaking",
+      "craft",
+      "studio",
+      "surplus",
+      "tools"
+    ]
+  },
+  {
+    "id": "rs-016",
+    "title": "Pure Copper Craft Wire Spool — 20 Gauge, 100 Metres",
+    "description": "Deadstock bright annealed solid copper craft wire. Highly malleable for wire-wrapping jewelry, miniature armature, electrical prototyping, and craft.",
+    "category": "RE:SOURCE",
+    "listingType": "surplus",
+    "price": 580,
+    "originalPrice": 1350,
+    "condition": "New",
+    "sellerName": "Industrial Metalfab",
+    "location": "Okhla, New Delhi",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&q=80",
+    "fallbackImage": "/images/fallback-resource.svg",
+    "available": true,
+    "createdAt": "2024-11-05T15:30:00Z",
+    "isDemo": true,
+    "tags": [
+      "copper",
+      "wire",
+      "metal",
+      "craft",
+      "jewelry",
+      "surplus",
+      "diy"
+    ]
   }
 ]

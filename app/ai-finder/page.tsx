@@ -2,10 +2,9 @@
 
 import { useState, useCallback } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { Search, Sparkles, X, ArrowRight } from "lucide-react";
+import { Sparkles, X, ArrowRight } from "lucide-react";
 import { useMarketplace } from "@/lib/context";
-import { filterByIntent, keywordSearch, formatPrice, getSeedProducts } from "@/lib/data";
+import { filterByIntent, keywordSearch, extractFallbackCriteria, getSeedProducts } from "@/lib/data";
 import { SearchIntent, Product } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 
@@ -26,10 +25,8 @@ export default function AIFinderPage() {
 
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState<SearchStatus>("idle");
-  const [results, setResults] = useState<Product[]>([]);
   const [intent, setIntent] = useState<SearchIntent | null>(null);
   const [aiUsed, setAiUsed] = useState(false);
-  const [errorMsg, setErrorMsg] = useState("");
   const [conversation, setConversation] = useState<
     { role: "user" | "ai"; content: string; results?: Product[] }[]
   >([]);
@@ -38,7 +35,6 @@ export default function AIFinderPage() {
     async (q: string) => {
       if (!q.trim()) return;
       setStatus("loading");
-      setErrorMsg("");
 
       const userMsg = { role: "user" as const, content: q };
       setConversation((prev) => [...prev, userMsg]);
@@ -63,33 +59,45 @@ export default function AIFinderPage() {
           setIntent(data.intent);
           usedAI = true;
         } else {
-          // Fallback: keyword search
+          // Fallback: smart keyword & budget search
           found = keywordSearch(allProducts, q).slice(0, 12);
-          setIntent(null);
+          const criteria = extractFallbackCriteria(q);
+          setIntent({
+            category: criteria.category,
+            max_price: criteria.maxPrice,
+            min_price: criteria.minPrice,
+            keywords: criteria.keywords,
+          });
         }
 
         setAiUsed(usedAI);
-        setResults(found);
         setStatus("success");
 
         const aiMsg = {
           role: "ai" as const,
           content: found.length > 0
-            ? `Found ${found.length} matching item${found.length !== 1 ? "s" : ""} in the catalogue.${usedAI ? " (AI intent extraction used)" : " (keyword fallback used)"}`
-            : "No matching items found in the current catalogue. Try different keywords or browse the marketplace.",
+            ? `Found ${found.length} matching item${found.length !== 1 ? "s" : ""} in the catalogue.${usedAI ? " (AI intent extraction used)" : " (smart fallback search used)"}`
+            : "No matching items found in the current catalogue. Try broadening your budget or keywords.",
           results: found,
         };
         setConversation((prev) => [...prev, aiMsg]);
-      } catch (err) {
+      } catch {
         // Network/timeout fallback
         const found = keywordSearch(allProducts, q).slice(0, 12);
-        setResults(found);
+        const criteria = extractFallbackCriteria(q);
+        setIntent({
+          category: criteria.category,
+          max_price: criteria.maxPrice,
+          min_price: criteria.minPrice,
+          keywords: criteria.keywords,
+        });
         setAiUsed(false);
-        setIntent(null);
         setStatus("success");
         const aiMsg = {
           role: "ai" as const,
-          content: `Keyword search found ${found.length} result${found.length !== 1 ? "s" : ""} (AI unavailable).`,
+          content: found.length > 0
+            ? `Smart search found ${found.length} result${found.length !== 1 ? "s" : ""} in the catalogue.`
+            : "No matching items found in the current catalogue.",
           results: found,
         };
         setConversation((prev) => [...prev, aiMsg]);
@@ -112,7 +120,6 @@ export default function AIFinderPage() {
 
   const clearConversation = () => {
     setConversation([]);
-    setResults([]);
     setStatus("idle");
     setIntent(null);
     setQuery("");
@@ -211,7 +218,7 @@ export default function AIFinderPage() {
                 onClick={() => handleInspiration(s)}
                 className="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant text-[13px] font-medium transition-all shadow-sm"
               >
-                "{s}"
+                &ldquo;{s}&rdquo;
               </button>
             ))}
           </div>
@@ -241,7 +248,7 @@ export default function AIFinderPage() {
                         <span className="text-[11px] font-semibold text-outline block mb-1">
                           You
                         </span>
-                        <p className="text-[15px] text-on-surface">"{msg.content}"</p>
+                        <p className="text-[15px] text-on-surface">&ldquo;{msg.content}&rdquo;</p>
                       </div>
                       <div className="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[11px] font-bold shrink-0 shadow-sm">
                         ME
@@ -333,8 +340,8 @@ export default function AIFinderPage() {
                   Ask anything about the catalogue
                 </h3>
                 <p className="text-[15px] text-on-surface-variant leading-relaxed max-w-md mx-auto">
-                  Try natural language like "engineering books under ₹300" or "handmade gifts for
-                  under ₹500". The AI finds only real items.
+                  Try natural language like &ldquo;engineering books under ₹300&rdquo; or &ldquo;handmade gifts for
+                  under ₹500&rdquo;. The AI finds only real items.
                 </p>
               </div>
             </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heart, MapPin } from "lucide-react";
 import { Product } from "@/lib/types";
-import { formatPrice, getSavingsPercent } from "@/lib/data";
+import { formatPrice, getSavingsPercent, getProductFallback } from "@/lib/data";
 import { useMarketplace } from "@/lib/context";
 import { useState } from "react";
 
@@ -32,7 +32,8 @@ export default function ProductCard({ product }: { product: Product }) {
   const [imgError, setImgError] = useState(false);
   const wishlisted = isWishlisted(product.id);
 
-  const imageSrc = product.imagePreviewUrl || (imgError ? "/images/fallback.jpg" : product.image);
+  const fallbackSrc = product.fallbackImage || getProductFallback(product.category);
+  const imageSrc = product.imagePreviewUrl || (imgError ? fallbackSrc : product.image);
 
   const savings =
     product.originalPrice && product.originalPrice > product.price
@@ -50,7 +51,7 @@ export default function ProductCard({ product }: { product: Product }) {
           className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
           onError={() => setImgError(true)}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          unoptimized={!!product.imagePreviewUrl}
+          unoptimized={!!product.imagePreviewUrl || imgError}
         />
 
         {/* Top tags */}

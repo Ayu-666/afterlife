@@ -3,7 +3,7 @@
 import { Leaf, Package, BookOpen, Recycle, Shirt, Zap, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { useMarketplace } from "@/lib/context";
-import { CATEGORIES, CATEGORY_META } from "@/lib/data";
+import { CATEGORIES, CATEGORY_META, getSeedProducts } from "@/lib/data";
 
 const CATEGORY_ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   "RE:WEAR": Shirt,
@@ -15,10 +15,10 @@ const CATEGORY_ICONS: Record<string, React.ComponentType<{ size?: number; classN
 };
 
 const DEMO_IMPACT_STATS = [
-  { label: "Demo items in catalogue", value: "36", unit: "listings", note: "Seed data" },
-  { label: "Illustrative CO₂ saved", value: "~2,400", unit: "kg", note: "Hypothetical figure" },
-  { label: "Estimated litres of water", value: "~180,000", unit: "L", note: "Illustrative only" },
-  { label: "Items given a second life", value: "36", unit: "items", note: "Seed data" },
+  { label: "Demo items in catalogue", value: "96", unit: "listings", note: "Seed data" },
+  { label: "Illustrative CO₂ saved", value: "~6,400", unit: "kg", note: "Hypothetical figure" },
+  { label: "Estimated litres of water", value: "~480,000", unit: "L", note: "Illustrative only" },
+  { label: "Items given a second life", value: "96", unit: "items", note: "Seed data" },
 ];
 
 const HOW_IT_WORKS = [
@@ -41,13 +41,14 @@ const HOW_IT_WORKS = [
 
 export default function ImpactPage() {
   const { products } = useMarketplace();
-  const totalProducts = products.length;
-  const demoCount = products.filter((p) => p.isDemo).length;
-  const userCount = products.filter((p) => !p.isDemo).length;
+  const allProducts = products.length > 0 ? products : getSeedProducts();
+  const totalProducts = allProducts.length;
+  const demoCount = allProducts.filter((p) => p.isDemo).length;
+  const userCount = allProducts.filter((p) => !p.isDemo).length;
 
   const categoryBreakdown = CATEGORIES.map((cat) => ({
     category: cat,
-    count: products.filter((p) => p.category === cat).length,
+    count: allProducts.filter((p) => p.category === cat).length,
     meta: CATEGORY_META[cat],
   }));
 

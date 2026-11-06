@@ -4,6 +4,7 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 import { Product } from "./types";
 import {
   getAllProducts,
+  getSeedProducts,
   getUserListings,
   saveUserListing,
   deleteUserListing,
@@ -25,21 +26,23 @@ interface MarketplaceContextValue {
 const MarketplaceContext = createContext<MarketplaceContextValue | null>(null);
 
 export function MarketplaceProvider({ children }: { children: React.ReactNode }) {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Product[]>(getSeedProducts);
   const [userListings, setUserListings] = useState<Product[]>([]);
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
 
   const refreshProducts = useCallback(() => {
-    const all = getAllProducts();
-    setProducts(all);
+    setProducts(getAllProducts());
     setUserListings(getUserListings());
     setWishlistIds(getWishlistIds());
   }, []);
 
-  // Load after mount to avoid hydration mismatch
+  // Merge localStorage user listings and wishlist after mount
   useEffect(() => {
-    refreshProducts();
-  }, [refreshProducts]);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setProducts(getAllProducts());
+    setUserListings(getUserListings());
+    setWishlistIds(getWishlistIds());
+  }, []);
 
   const addListing = useCallback(
     (product: Product) => {

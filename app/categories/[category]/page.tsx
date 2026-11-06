@@ -1,7 +1,6 @@
 "use client";
 
 import { use } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { CATEGORY_META, getSeedProducts } from "@/lib/data";

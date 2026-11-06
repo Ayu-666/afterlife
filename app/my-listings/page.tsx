@@ -121,7 +121,7 @@ export default function MyListingsPage() {
                         unoptimized={!!product.imagePreviewUrl}
                         onError={(e) => {
                           (e.currentTarget as HTMLImageElement).src =
-                            "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=60";
+                            product.fallbackImage || "/images/fallback.svg";
                         }}
                       />
                     </div>

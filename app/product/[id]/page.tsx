@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, Heart, MapPin, Share2, ExternalLink } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { useMarketplace } from "@/lib/context";
-import { getSeedProducts, formatPrice, getSavingsPercent } from "@/lib/data";
+import { getSeedProducts, formatPrice, getSavingsPercent, getProductFallback } from "@/lib/data";
 import { Product } from "@/lib/types";
 
 const LISTING_TYPE_LABELS: Record<string, string> = {
@@ -52,7 +52,8 @@ export default function ProductDetailPage({
   }
 
   const wishlisted = isWishlisted(product.id);
-  const imageSrc = product.imagePreviewUrl || (imgError ? "/images/fallback.jpg" : product.image);
+  const fallbackSrc = product.fallbackImage || getProductFallback(product.category);
+  const imageSrc = product.imagePreviewUrl || (imgError ? fallbackSrc : product.image);
   const savings =
     product.originalPrice && product.originalPrice > product.price
       ? getSavingsPercent(product.price, product.originalPrice)
@@ -101,7 +102,7 @@ export default function ProductDetailPage({
                 onError={() => setImgError(true)}
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 priority
-                unoptimized={!!product.imagePreviewUrl}
+                unoptimized={!!product.imagePreviewUrl || imgError}
               />
               <div className="absolute top-4 left-4 flex flex-col gap-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface/95 backdrop-blur-sm text-primary text-[11px] font-semibold shadow-sm">
@@ -212,10 +213,9 @@ export default function ProductDetailPage({
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1.5">
                     <span className="text-[13px] font-semibold text-primary">{product.sellerName}</span>
-                    <span className="text-secondary text-[16px]">✓</span>
                   </div>
                   <span className="text-[12px] text-on-surface-variant">
-                    {product.isDemo ? "Demo Seller" : "Verified Seller"}
+                    {product.isDemo ? "Demo Listing (Illustrative)" : "Community Seller"}
                   </span>
                   <span className="text-[11px] text-outline flex items-center gap-1 mt-0.5">
                     <MapPin size={11} /> {product.location}

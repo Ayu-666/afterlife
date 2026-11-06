@@ -123,6 +123,15 @@ export function filterProducts(products: Product[], filters: FilterState): Produ
   return result;
 }
 
+// ── Stopwords for natural search filtering ──────────────────────────────
+const STOP_WORDS = new Set([
+  "find", "show", "search", "get", "give", "need", "want", "looking", "for",
+  "i", "me", "my", "we", "our", "a", "an", "the", "and", "or", "in", "on",
+  "at", "to", "from", "with", "under", "below", "above", "over", "between",
+  "less", "than", "more", "about", "some", "any", "all", "of", "is", "are",
+  "rupees", "rs", "inr", "please", "item", "items", "product", "products", "something"
+]);
+
 // ── AI-intent-based filter ───────────────────────────────────────────────
 export function filterByIntent(products: Product[], intent: SearchIntent): Product[] {
   let result = [...products];
@@ -143,33 +152,170 @@ export function filterByIntent(products: Product[], intent: SearchIntent): Produ
     result = result.filter((p) => p.price >= intent.min_price!);
   }
   if (intent.keywords && intent.keywords.length > 0) {
-    const kws = intent.keywords.map((k) => k.toLowerCase());
-    result = result.filter((p) =>
-      kws.some(
-        (kw) =>
-          p.title.toLowerCase().includes(kw) ||
-          p.description.toLowerCase().includes(kw) ||
-          (p.tags ?? []).some((t) => t.toLowerCase().includes(kw))
-      )
-    );
+    const kws = intent.keywords.map((k) => k.toLowerCase().trim()).filter(Boolean);
+    if (kws.length === 0) return result;
+
+    const scored: { product: Product; score: number }[] = [];
+    for (const p of result) {
+      let score = 0;
+      let matchedCount = 0;
+      const titleL = p.title.toLowerCase();
+      const descL = p.description.toLowerCase();
+      const tagsL = (p.tags || []).map((t) => t.toLowerCase());
+
+      for (const kw of kws) {
+        let hit = false;
+        if (titleL.includes(kw)) {
+          score += 12;
+          hit = true;
+        }
+        if (tagsL.some((t) => t.includes(kw) || kw.includes(t))) {
+          score += 8;
+          hit = true;
+        }
+        if (descL.includes(kw)) {
+          score += 3;
+          hit = true;
+        }
+        if (hit) matchedCount++;
+      }
+
+      if (score > 0) {
+        score += matchedCount * 5;
+        scored.push({ product: p, score });
+      }
+    }
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.map((s) => s.product);
   }
 
   return result;
 }
 
+// ── Smart local fallback search (category + budget + keyword scoring) ───
+export function extractFallbackCriteria(query: string): {
+  maxPrice: number | null;
+  minPrice: number | null;
+  keywords: string[];
+  category: Category | null;
+} {
+  const lower = query.toLowerCase();
+
+  // Extract budget
+  let maxPrice: number | null = null;
+  let minPrice: number | null = null;
+
+  const betweenMatch = lower.match(/(?:between|from)\s*₹?\s*(\d+)\s*(?:and|to)\s*₹?\s*(\d+)/i);
+  if (betweenMatch) {
+    minPrice = parseInt(betweenMatch[1], 10);
+    maxPrice = parseInt(betweenMatch[2], 10);
+  } else {
+    const maxMatch =
+      lower.match(/(?:under|below|less than|within|max|maximum)\s*₹?\s*(\d+)/i) ||
+      lower.match(/₹\s*(\d+)\s*(?:or less|budget|max)/i);
+    if (maxMatch) {
+      maxPrice = parseInt(maxMatch[1], 10);
+    }
+  }
+
+  // Keywords with stop-word removal
+  const rawWords = lower.replace(/[^\w\s\+]/g, " ").split(/\s+/).filter(Boolean);
+  const keywords = rawWords.filter((w) => !STOP_WORDS.has(w) && isNaN(Number(w)));
+
+  // Category detection based on product domains
+  const hasBook = keywords.some((k) =>
+    ["book", "books", "textbook", "textbooks", "dsa", "c++", "cpp", "python", "java", "dbms", "math", "physics", "chemistry", "novel", "gate", "algorithms", "engineering"].includes(k)
+  );
+  const hasClothing = keywords.some((k) =>
+    ["clothing", "clothes", "shirt", "jeans", "jacket", "trench", "wear", "saree", "kurta", "dress", "trousers", "boots", "tote"].includes(k)
+  );
+  const hasArtisan = keywords.some((k) =>
+    ["handmade", "gifts", "gift", "pottery", "jewellery", "jewelry", "craft", "artisan", "traditional", "brass", "terracotta", "dhurrie", "earrings", "coasters"].includes(k)
+  );
+  const hasUpcycled = keywords.some((k) =>
+    ["upcycled", "decor", "hostel", "room", "reclaimed", "repurposed", "wood", "furniture", "table", "lamp", "shelf", "macrame"].includes(k)
+  );
+  const hasElectronics = keywords.some((k) =>
+    ["headphones", "keyboard", "mouse", "monitor", "electronics", "camera", "speaker", "laptop", "audio", "earphones", "refurbished"].includes(k)
+  );
+  const hasSurplus = keywords.some((k) =>
+    ["surplus", "fabric", "packaging", "cardboard", "boxes", "deadstock", "yarn", "burlap", "spools", "scraps"].includes(k)
+  );
+
+  let category: Category | null = null;
+  const matchedCats: Category[] = [];
+  if (hasBook) matchedCats.push("RE:READ");
+  if (hasClothing) matchedCats.push("RE:WEAR");
+  if (hasArtisan) matchedCats.push("ROOTS");
+  if (hasUpcycled) matchedCats.push("RE:MAKE");
+  if (hasElectronics) matchedCats.push("RE:USE");
+  if (hasSurplus) matchedCats.push("RE:SOURCE");
+
+  if (matchedCats.length === 1) {
+    category = matchedCats[0];
+  }
+
+  return { maxPrice, minPrice, keywords, category };
+}
+
 // ── Keyword-only fallback search ─────────────────────────────────────────
 export function keywordSearch(products: Product[], query: string): Product[] {
-  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
-  if (words.length === 0) return products.slice(0, 12);
-  return products.filter((p) =>
-    words.some(
-      (w) =>
-        p.title.toLowerCase().includes(w) ||
-        p.description.toLowerCase().includes(w) ||
-        p.category.toLowerCase().includes(w) ||
-        (p.tags ?? []).some((t) => t.toLowerCase().includes(w))
-    )
-  );
+  if (!query.trim()) return products.slice(0, 12);
+
+  const criteria = extractFallbackCriteria(query);
+  let pool = [...products];
+
+  // Apply category if uniquely recognized
+  if (criteria.category) {
+    pool = pool.filter((p) => p.category === criteria.category);
+  }
+
+  // Strictly enforce budget
+  if (criteria.maxPrice !== null) {
+    pool = pool.filter((p) => p.price <= criteria.maxPrice!);
+  }
+  if (criteria.minPrice !== null) {
+    pool = pool.filter((p) => p.price >= criteria.minPrice!);
+  }
+
+  if (criteria.keywords.length === 0) {
+    return pool.slice(0, 12);
+  }
+
+  const scored: { product: Product; score: number }[] = [];
+  for (const p of pool) {
+    let score = 0;
+    let matchedCount = 0;
+    const titleL = p.title.toLowerCase();
+    const descL = p.description.toLowerCase();
+    const tagsL = (p.tags || []).map((t) => t.toLowerCase());
+
+    for (const kw of criteria.keywords) {
+      let hit = false;
+      if (titleL.includes(kw)) {
+        score += 12;
+        hit = true;
+      }
+      if (tagsL.some((t) => t.includes(kw) || kw.includes(t))) {
+        score += 8;
+        hit = true;
+      }
+      if (descL.includes(kw)) {
+        score += 3;
+        hit = true;
+      }
+      if (hit) matchedCount++;
+    }
+
+    if (score > 0) {
+      score += matchedCount * 5;
+      scored.push({ product: p, score });
+    }
+  }
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.map((s) => s.product);
 }
 
 // ── Helpers ─────────────────────────────────────────────────────────────
@@ -257,3 +403,19 @@ export const CATEGORY_IMAGES: Record<Category, string> = {
   "RE:USE": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
   "RE:SOURCE": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80",
 };
+
+export const CATEGORY_FALLBACKS: Record<Category, string> = {
+  "RE:WEAR": "/images/fallback-rewear.svg",
+  ROOTS: "/images/fallback-roots.svg",
+  "RE:READ": "/images/fallback-reread.svg",
+  "RE:MAKE": "/images/fallback-remake.svg",
+  "RE:USE": "/images/fallback-reuse.svg",
+  "RE:SOURCE": "/images/fallback-resource.svg",
+};
+
+export function getProductFallback(category?: Category): string {
+  if (category && CATEGORY_FALLBACKS[category]) {
+    return CATEGORY_FALLBACKS[category];
+  }
+  return "/images/fallback.svg";
+}

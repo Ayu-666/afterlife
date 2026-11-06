@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Search, ArrowRight } from "lucide-react";
 import { useMarketplace } from "@/lib/context";
 import { filterProducts, CATEGORIES, CATEGORY_META } from "@/lib/data";
@@ -45,6 +46,7 @@ const QUICK_SEARCHES = [
 ];
 
 export default function HomePage() {
+  const router = useRouter();
   const { products } = useMarketplace();
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState<"All" | "Fashion" | "Crafts" | "Tech">("All");
@@ -96,7 +98,7 @@ export default function HomePage() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onKeyDown={(e) => {
                     if (e.key === "Enter" && searchQuery.trim()) {
-                      window.location.href = `/marketplace?q=${encodeURIComponent(searchQuery)}`;
+                      router.push(`/marketplace?q=${encodeURIComponent(searchQuery)}`);
                     }
                   }}
                   className="w-full bg-transparent text-[15px] text-on-surface placeholder:text-outline focus:outline-none"
@@ -120,7 +122,7 @@ export default function HomePage() {
                     onClick={() => setSearchQuery(q)}
                     className="text-[12px] px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-on-surface-variant transition-colors"
                   >
-                    "{q}"
+                    &ldquo;{q}&rdquo;
                   </button>
                 ))}
               </div>
@@ -389,7 +391,7 @@ export default function HomePage() {
                 </span>
               </div>
               <h2 className="font-[family-name:var(--font-playfair)] text-[36px] font-normal text-primary mb-space-md leading-tight">
-                Preserving India's Handmade Heritage
+                Preserving India&apos;s Handmade Heritage
               </h2>
               <p className="text-[15px] text-on-surface-variant mb-space-lg leading-relaxed">
                 AFTERLIFE connects buyers directly with artisan collectives, traditional weavers,

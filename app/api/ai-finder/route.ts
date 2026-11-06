@@ -23,25 +23,33 @@ export async function POST(req: NextRequest) {
     const systemPrompt = `You are a shopping intent extraction system for AFTERLIFE, an Indian circular marketplace.
 Extract search intent from the user's query and return ONLY valid JSON (no markdown, no explanation).
 
-Categories available: RE:WEAR, ROOTS, RE:READ, RE:MAKE, RE:USE, RE:SOURCE
+Categories available:
+- RE:WEAR: Pre-loved clothing, vintage fashion, jackets, jeans, shirts, sarees, shoes, accessories
+- ROOTS: Handmade jewellery, pottery, handloom products, artisan crafts, traditional gifts, home decor
+- RE:READ: Used textbooks, engineering books, programming books (DSA, C++, Java, Python, DBMS, OS, Networks, Math), novels, educational resources
+- RE:MAKE: Upcycled furniture, recycled decor, hostel room decor, repurposed wood, lamps, DIY creations
+- RE:USE: Pre-owned and refurbished electronics, headphones, keyboards, mice, monitors, speakers, cameras
+- RE:SOURCE: Surplus fabric, packaging, boxes, yarn, scrap materials, craft supplies, deadstock
+
 Listing types: pre_owned, handmade, upcycled, refurbished, surplus, free
 Conditions: New, Mint, Excellent, Good, Fair, Restored, Refurbished
 
 Respond with this exact JSON structure:
 {
-  "category": null or one of the category strings above,
+  "category": null or one of the category strings above (set to null if query spans multiple categories like "book and headphones"),
   "max_price": null or a number in INR,
   "min_price": null or a number in INR,
-  "keywords": array of 1-5 relevant English keywords,
+  "keywords": array of 1-5 specific product-relevant nouns/keywords in lowercase,
   "listing_types": array of listing type strings or empty array,
   "condition": null or one of the condition strings above
 }
 
 Rules:
-- If budget mentioned like "under ₹500" or "below 300", set max_price
-- Keywords should be product-relevant nouns (e.g. "textbook", "keyboard", "lamp")
-- Never invent product names or prices
-- If no clear category, set category to null`;
+- Budget: "under ₹500", "below 300", "maximum 500" -> set max_price
+- Price range: "between ₹300 and ₹800" -> set min_price: 300, max_price: 800
+- If the user asks for "refurbished", add "refurbished" to listing_types or condition
+- If the user asks for "handmade", add "handmade" to listing_types
+- Never invent product names or prices. Return only the extracted search criteria.`;
 
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
@@ -61,6 +69,7 @@ Rules:
       // Validate and sanitise
       const validCategories = ["RE:WEAR", "ROOTS", "RE:READ", "RE:MAKE", "RE:USE", "RE:SOURCE"];
       const validTypes = ["pre_owned", "handmade", "upcycled", "refurbished", "surplus", "free"];
+      const validConditions = ["New", "Mint", "Excellent", "Good", "Fair", "Restored", "Refurbished"];
 
       const sanitised: SearchIntent = {
         category:
@@ -84,7 +93,10 @@ Rules:
         listing_types: Array.isArray(intent.listing_types)
           ? (intent.listing_types.filter((t) => validTypes.includes(t)) as SearchIntent["listing_types"])
           : [],
-        condition: null,
+        condition:
+          intent.condition && validConditions.includes(intent.condition)
+            ? (intent.condition as SearchIntent["condition"])
+            : null,
       };
 
       return NextResponse.json({ intent: sanitised, fallback: false });
