@@ -19,6 +19,44 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.akashi-kama.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.pinimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.exoticindia.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.foter.com",
+      },
+      {
+        protocol: "https",
+        hostname: "live.staticflickr.com",
+ 
+      },
+      {
+        protocol: "https",
+        hostname: "sowpeace.in",
+      },
+      {
+        protocol: "https",
+        hostname: "www.wileyplus.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+      },
+      {
+        protocol: "https",
+        hostname: "books.google.com",
+      },
+
     ],
   },
 };

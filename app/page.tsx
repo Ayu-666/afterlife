@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search, ArrowRight } from "lucide-react";
 import { useMarketplace } from "@/lib/context";
-import { filterProducts, CATEGORIES, CATEGORY_META } from "@/lib/data";
+import { filterProducts, CATEGORIES, CATEGORY_META, shouldUseAIFinder } from "@/lib/data";
 import { FilterState } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 import { getSeedProducts } from "@/lib/data";
@@ -63,6 +63,17 @@ export default function HomePage() {
 
   const trendingProducts = filterProducts(allProducts, TAB_FILTER[activeTab]).slice(0, 4);
 
+  const handleSearch = () => {
+    const q = searchQuery.trim();
+    if (!q) return;
+
+    if (shouldUseAIFinder(q)) {
+      router.push(`/ai-finder?query=${encodeURIComponent(q)}`);
+    } else {
+      router.push(`/marketplace?q=${encodeURIComponent(q)}`);
+    }
+  };
+
   return (
     <div className="flex flex-col w-full">
       {/* ── HERO ───────────────────────────────────────────────────── */}
@@ -97,21 +108,23 @@ export default function HomePage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter" && searchQuery.trim()) {
-                      router.push(`/marketplace?q=${encodeURIComponent(searchQuery)}`);
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      handleSearch();
                     }
                   }}
                   className="w-full bg-transparent text-[15px] text-on-surface placeholder:text-outline focus:outline-none"
                   placeholder="Search via natural intent, provenance, or era..."
                   type="text"
                 />
-                <Link
-                  href={`/marketplace?q=${encodeURIComponent(searchQuery)}`}
+                <button
+                  type="button"
+                  onClick={handleSearch}
                   className="px-space-md py-2.5 bg-primary text-on-primary text-[13px] font-medium rounded hover:bg-primary-container transition-all flex items-center gap-1.5 shadow-sm shrink-0"
                 >
                   <span>Search</span>
                   <ArrowRight size={16} />
-                </Link>
+                </button>
               </div>
               {/* Quick searches */}
               <div className="pt-2 px-space-xs flex flex-wrap items-center gap-1.5">

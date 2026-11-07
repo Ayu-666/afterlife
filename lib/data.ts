@@ -318,6 +318,51 @@ export function keywordSearch(products: Product[], query: string): Product[] {
   return scored.map((s) => s.product);
 }
 
+// ── Hybrid Search Intent Classifier ─────────────────────────────────────
+export function shouldUseAIFinder(query: string): boolean {
+  const trimmed = query.trim().toLowerCase();
+  if (!trimmed) return false;
+
+  // 1. Budget & Price Limits (e.g. "under ₹200", "below 500", "cheap", "affordable", "between 100 and 500")
+  const hasBudgetLimit =
+    /(?:under|below|less\s+than|within|max|maximum|around|budget|approx)\s*(?:₹|rs\.?|inr)?\s*\d+/i.test(trimmed) ||
+    /(?:₹|rs\.?|inr)\s*\d+/i.test(trimmed) ||
+    /\d+\s*(?:₹|rs|rupees|inr|k)\b/i.test(trimmed) ||
+    /between\s*(?:₹|rs\.?|inr)?\s*\d+\s*(?:and|to)\s*(?:₹|rs\.?|inr)?\s*\d+/i.test(trimmed) ||
+    /\b(?:cheap|cheapest|affordable|inexpensive|low-cost|budget-friendly)\b/i.test(trimmed);
+
+  if (hasBudgetLimit) return true;
+
+  // 2. Conversational Requests & Questions (e.g. "find me", "i need", "i want", "suggest", "recommend")
+  const hasConversationalIntent =
+    /\b(?:i\s+need|i\s+want|i\s+am\s+looking\s+for|im\s+looking\s+for|looking\s+for|find\s+me|find\s+a|find\s+an|\bfind\b|show\s+me|suggest|recommend|recommendation|help\s+me|give\s+me|can\s+you|where\s+can|how\s+to|what\s+is|something\s+for|anything\s+for)\b/i.test(
+      trimmed
+    );
+
+  if (hasConversationalIntent) return true;
+
+  // 3. Use Cases & Contextual Purpose (e.g. "for college", "for my room", "for travelling", "suitable for")
+  const hasUseCase =
+    /\b(?:suitable\s+for|ideal\s+for|good\s+for|fit\s+for|great\s+for|used\s+for|best\s+for)\b/i.test(trimmed) ||
+    /\bfor\s+(?:my|a|an|the|our|daily|everyday|regular)?\s*(?:college|hostel|room|dorm|study|studying|travelling|traveling|travel|trips|trip|office|work|gym|workout|gifting|gift|friends?|brother|sister|parents?|students?|beginners?|commute|living\s+room|bedroom|kitchen)\b/i.test(
+      trimmed
+    ) ||
+    /\b(?:daily\s+use|everyday\s+use|regular\s+use)\b/i.test(trimmed);
+
+  if (hasUseCase) return true;
+
+  // 4. Subjective Quality & Functional Constraints (e.g. "comfortable", "good sound", "aesthetic", "useful")
+  const hasSubjectivePreference =
+    /\b(?:comfortable|comfort|good\s+sound|sound\s+quality|aesthetic|useful|ergonomic|durable|long\s+lasting|high\s+quality|best\s+quality|minimalist|stylish|breathable)\b/i.test(
+      trimmed
+    );
+
+  if (hasSubjectivePreference) return true;
+
+  // Default to standard marketplace search for direct keywords / products / categories
+  return false;
+}
+
 // ── Helpers ─────────────────────────────────────────────────────────────
 export function formatPrice(price: number): string {
   return `₹${price.toLocaleString("en-IN")}`;

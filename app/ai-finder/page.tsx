@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Sparkles, X, ArrowRight } from "lucide-react";
 import { useMarketplace } from "@/lib/context";
 import { filterByIntent, keywordSearch, extractFallbackCriteria, getSeedProducts } from "@/lib/data";
@@ -19,7 +20,11 @@ const INSPIRATIONS = [
   "Vintage clothing under ₹2,000",
 ];
 
-export default function AIFinderPage() {
+function AIFinderContent() {
+  const searchParams = useSearchParams();
+  const queryParam = searchParams.get("query") || searchParams.get("q") || "";
+  const initialSearchTriggered = useRef(false);
+
   const { products } = useMarketplace();
   const allProducts = products.length > 0 ? products : getSeedProducts();
 
@@ -105,6 +110,16 @@ export default function AIFinderPage() {
     },
     [allProducts]
   );
+
+  // Automatically execute search if query param is present on mount
+  useEffect(() => {
+    const q = queryParam.trim();
+    if (q && !initialSearchTriggered.current) {
+      initialSearchTriggered.current = true;
+      setQuery(q);
+      runSearch(q);
+    }
+  }, [queryParam, runSearch]);
 
   const handleSubmit = () => {
     if (query.trim()) {
@@ -368,5 +383,19 @@ export default function AIFinderPage() {
         )}
       </section>
     </div>
+  );
+}
+
+export default function AIFinderPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="animate-spin w-8 h-8 border-2 border-primary border-t-transparent rounded-full" />
+        </div>
+      }
+    >
+      <AIFinderContent />
+    </Suspense>
   );
 }
