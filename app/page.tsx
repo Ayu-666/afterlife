@@ -18,7 +18,7 @@ const HERO_PRODUCTS = [
     price: "₹4,200",
     badge: "MINT CONDITION",
     type: "ARCHIVE PIECE",
-    img: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+    img: "/images/products/rw-002.jpg",
   },
   {
     label: "CIRCULAR WORKSHOP",
@@ -26,7 +26,7 @@ const HERO_PRODUCTS = [
     price: "₹2,850",
     badge: "UPCYCLED DECOR",
     type: "RE:MAKE",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    img: "/images/products/rm-002.jpg",
   },
   {
     label: "1981 YASHICA",
@@ -34,7 +34,7 @@ const HERO_PRODUCTS = [
     price: "₹5,400",
     badge: "REFURBISHED",
     type: "TESTED",
-    img: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&q=80",
+    img: "/images/products/ru-002.jpg",
   },
 ];
 

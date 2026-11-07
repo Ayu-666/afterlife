@@ -65,3 +65,13 @@ export interface SearchIntent {
   listing_types?: ListingType[];
   condition?: Condition | null;
 }
+
+export interface ChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  products?: Product[];
+  suggestedFollowUps?: string[];
+  createdAt?: string;
+  usedAI?: boolean;
+}
