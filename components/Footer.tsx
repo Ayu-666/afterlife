@@ -1,95 +1,161 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { CheckCircle2, Leaf, ShieldCheck, ArrowRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-primary-container text-on-primary-container mt-16">
-      <div className="max-w-[1440px] mx-auto px-gutter lg:px-margin-lg py-space-2xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-space-xl">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <span className="font-[family-name:var(--font-playfair)] text-[22px] font-semibold tracking-tight text-on-primary uppercase block mb-space-sm">
-              AFTERLIFE
-            </span>
-            <p className="text-[13px] text-on-primary-container leading-relaxed max-w-xs">
+    <footer className="w-full bg-surface-container-low pt-space-2xl pb-margin text-on-surface border-t border-outline-variant/40 mt-20">
+      <div className="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl">
+          {/* Brand Column */}
+          <div className="lg:col-span-4">
+            <Link href="/" className="flex items-center gap-space-sm mb-space-md group">
+              <Image
+                src="/images/brand/afterlife-logo.png"
+                alt="AFTERLIFE Brand Logo"
+                width={28}
+                height={28}
+                className="h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+              <span className="font-[family-name:var(--font-playfair)] text-[20px] font-semibold text-primary uppercase tracking-tight">
+                AFTERLIFE
+              </span>
+            </Link>
+            <p className="text-[14px] text-on-surface-variant max-w-sm mb-space-lg leading-relaxed">
               Find value in what the world overlooks. Buy differently. Sell meaningfully. Waste less.
             </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-[11px] font-semibold text-on-surface-variant">
+                <CheckCircle2 size={13} className="text-secondary" />
+                100% Circular Verified
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-[11px] font-semibold text-on-surface-variant">
+                <Leaf size={13} className="text-secondary" />
+                Zero Virgin Material
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-[11px] font-semibold text-on-surface-variant">
+                <ShieldCheck size={13} className="text-secondary" />
+                Ethical Peer Exchange
+              </span>
+            </div>
           </div>
 
-          {/* Navigate */}
-          <div>
-            <p className="text-[11px] font-semibold tracking-[0.08em] uppercase text-on-primary-container mb-space-sm opacity-70">
-              Navigate
-            </p>
-            <ul className="space-y-2">
+          {/* Curated Pillars */}
+          <div className="lg:col-span-3">
+            <h4 className="text-[11px] font-semibold text-primary tracking-wider uppercase mb-space-md">
+              Curated Pillars
+            </h4>
+            <ul className="space-y-2 text-[13px] text-on-surface-variant">
               {[
-                { href: "/", label: "Home" },
-                { href: "/marketplace", label: "Marketplace" },
-                { href: "/categories", label: "Categories" },
-                { href: "/ai-finder", label: "AI Finder" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="text-[13px] text-on-primary-container opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    {l.label}
+                { name: "RE:WEAR", label: "Thrift & Archival Fashion", href: "/categories/RE%3AWEAR" },
+                { name: "ROOTS", label: "Indian Craft & Heritage", href: "/categories/ROOTS" },
+                { name: "RE:READ", label: "Books & Academic Texts", href: "/categories/RE%3AREAD" },
+                { name: "RE:MAKE", label: "Upcycled Furniture & Art", href: "/categories/RE%3AMAKE" },
+                { name: "RE:USE", label: "Certified Restored Tech", href: "/categories/RE%3AUSE" },
+                { name: "RE:SOURCE", label: "Surplus Raw Materials", href: "/categories/RE%3ASOURCE" },
+              ].map((p) => (
+                <li key={p.name}>
+                  <Link href={p.href} className="hover:text-primary transition-colors block py-0.5">
+                    <span className="font-semibold text-primary">{p.name}</span>
+                    <span className="text-outline ml-1.5">— {p.label}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Account */}
-          <div>
-            <p className="text-[11px] font-semibold tracking-[0.08em] uppercase text-on-primary-container mb-space-sm opacity-70">
-              Account
-            </p>
-            <ul className="space-y-2">
-              {[
-                { href: "/sell", label: "Sell / Give" },
-                { href: "/my-listings", label: "My Listings" },
-                { href: "/wishlist", label: "Wishlist" },
-                { href: "/impact", label: "Impact" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="text-[13px] text-on-primary-container opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
+          {/* Marketplace Navigation */}
+          <div className="lg:col-span-2">
+            <h4 className="text-[11px] font-semibold text-primary tracking-wider uppercase mb-space-md">
+              Marketplace
+            </h4>
+            <ul className="space-y-2 text-[13px] text-on-surface-variant">
+              <li>
+                <Link href="/marketplace" className="hover:text-primary transition-colors block py-0.5">
+                  Browse Catalog
+                </Link>
+              </li>
+              <li>
+                <Link href="/categories" className="hover:text-primary transition-colors block py-0.5">
+                  Categories Hub
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-finder" className="hover:text-primary transition-colors block py-0.5">
+                  AI Concierge
+                </Link>
+              </li>
+              <li>
+                <Link href="/sell" className="hover:text-primary transition-colors block py-0.5">
+                  List an Item
+                </Link>
+              </li>
+              <li>
+                <Link href="/my-listings" className="hover:text-primary transition-colors block py-0.5">
+                  Curator Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link href="/impact" className="hover:text-primary transition-colors block py-0.5">
+                  Circulation Impact
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Categories */}
-          <div>
-            <p className="text-[11px] font-semibold tracking-[0.08em] uppercase text-on-primary-container mb-space-sm opacity-70">
-              Categories
+          {/* Newsletter / Curated Drops */}
+          <div className="lg:col-span-3">
+            <h4 className="text-[11px] font-semibold text-primary tracking-wider uppercase mb-space-md">
+              Weekly Curated Drops
+            </h4>
+            <p className="text-[13px] text-on-surface-variant mb-space-md leading-relaxed">
+              Rare archival fashion, student textbook circulations, and artisan drops direct to your inbox.
             </p>
-            <ul className="space-y-2">
-              {["RE:WEAR", "ROOTS", "RE:READ", "RE:MAKE", "RE:USE", "RE:SOURCE"].map((cat) => (
-                <li key={cat}>
-                  <Link
-                    href={`/categories/${encodeURIComponent(cat)}`}
-                    className="text-[13px] text-on-primary-container opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    {cat}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                alert("Thank you for joining the AFTERLIFE circular dispatch.");
+              }}
+              className="flex flex-col gap-2"
+            >
+              <div className="flex rounded-lg overflow-hidden border border-outline-variant/60 bg-surface shadow-sm focus-within:border-primary">
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  required
+                  className="px-3 py-2 text-[13px] bg-transparent text-primary placeholder:text-outline focus:outline-none flex-1"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-primary text-on-primary text-[12px] font-semibold hover:bg-primary-container transition-colors shrink-0 flex items-center gap-1"
+                >
+                  <span>Join</span>
+                  <ArrowRight size={13} />
+                </button>
+              </div>
+              <span className="text-[11px] text-outline">Zero spam. Pure circular curation.</span>
+            </form>
           </div>
         </div>
 
-        <div className="mt-space-2xl pt-space-lg border-t border-on-primary-container/20 flex flex-col sm:flex-row items-center justify-between gap-space-md">
-          <p className="text-[11px] text-on-primary-container opacity-60 tracking-[0.05em]">
-            © 2024 AFTERLIFE. All demo listings are illustrative only. No real transactions occur.
-          </p>
-          <p className="text-[11px] text-on-primary-container opacity-60 tracking-[0.05em]">
-            Built with Next.js · Tailwind CSS · Gemini AI
-          </p>
+        {/* Bottom Credits & Transparency */}
+        <div className="pt-space-lg border-t border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-space-md text-[11px] text-outline">
+          <p>© 2026 AFTERLIFE. Circular Commerce Platform for India. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/impact" className="hover:text-primary transition-colors">
+              Open Impact Protocol
+            </Link>
+            <span>·</span>
+            <Link href="/categories" className="hover:text-primary transition-colors">
+              Pillar Taxonomy
+            </Link>
+            <span>·</span>
+            <Link href="/ai-finder" className="hover:text-primary transition-colors">
+              AI Concierge
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

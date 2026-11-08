@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","inverse-primary":"#a8cfc0","primary-container":"#183d32","error-container":"#ffdad6","surface-tint":"#416659","primary-fixed":"#c3ebdb","primary-fixed-dim":"#a8cfc0","surface-container-highest":"#e5e2da","on-tertiary-container":"#99a298","on-error":"#ffffff","on-surface":"#1c1c17","surface-variant":"#e5e2da","inverse-on-surface":"#f3f1e9","secondary":"#49645b","on-secondary-fixed":"#042019","on-secondary-fixed-variant":"#314c44","on-background":"#1c1c17","tertiary-fixed-dim":"#c0c9bd","surface-container-high":"#ebe8e0","outline":"#717975","on-primary-fixed-variant":"#294d42","secondary-container":"#c8e6db","on-tertiary-fixed-variant":"#404940","on-tertiary":"#ffffff","surface-container-low":"#f6f3eb","secondary-fixed-dim":"#afcdc2","outline-variant":"#c1c8c4","surface":"#fcf9f1","on-primary-container":"#81a899","surface-dim":"#dcdad2","on-surface-variant":"#414845","tertiary-fixed":"#dce5d9","tertiary":"#1b231c","primary":"#00271d","secondary-fixed":"#cbe9de","on-error-container":"#93000a","error":"#ba1a1a","on-secondary-container":"#4d685f","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#161d16","on-primary-fixed":"#002118","surface-container":"#f1eee6","surface-bright":"#fcf9f1","on-primary":"#ffffff","background":"#fcf9f1","inverse-surface":"#31312b","tertiary-container":"#313931"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","margin-lg":"4rem","space-lg":"1.5rem",margin:"2rem","space-sm":"0.5rem","space-2xl":"4rem",gutter:"1.5rem","margin-sm":"1rem","gutter-sm":"1rem","gutter-lg":"2.5rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"price-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"title-editorial":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"price-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"label-caps":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"]},fontSize:{"price-lg":["20px",{lineHeight:"26px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"500"}],"title-editorial":["18px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"price-md":["16px",{lineHeight:"22px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"400"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"400"}],"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(16,43,36,0.04)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="AFTERLIFE Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB06pWau88_iJqBKVioaXxTVD6AsDtv2TUzYnm8OE5JZMecc36wNu6JZQXBzFpQYTmSWCWy6krhXbaDJzmWW0Ak8mHwo6pffDtmy0q9uW3chviUlm0gA5YGvQDmIzhW2dxWOHwXNuGHDIeNM6fhw_OOZuzDT6jAdWjrRtySXCCw7DMwaBSy3_3OTmV04ewovG4n9NjQFsSLmJSO1__5k2XvmcXhIG3GpYexglIjrttr"/><span class="font-title-editorial text-title-editorial tracking-tight text-primary uppercase">AFTERLIFE</span></a></div><nav class="hidden xl:flex items-center gap-space-lg text-on-surface-variant" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="discover" href="#">Discover</a><a class="font-label-md text-label-md transition-colors hover:text-primary" data-path="categories" href="#">Categories</a><a class="font-label-md text-label-md transition-colors hover:text-primary relative flex items-center" data-path="ai-finder" href="#">AI Finder<span class="ml-1.5 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">AI</span></a><a class="font-label-md text-label-md transition-colors hover:text-primary" data-path="impact" href="#">Impact</a><a class="font-label-md text-label-md transition-colors hover:text-primary" data-path="my-listings" href="#">My Listings</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface-variant cursor-pointer"><span class="material-symbols-outlined text-[18px] mr-2">search</span><span class="font-body-sm text-body-sm mr-space-md text-outline">Search circular archive...</span><kbd class="font-label-caps text-label-caps bg-surface-container px-1.5 py-0.5 rounded text-on-surface-variant">⌘K</kbd></div><a class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-on-primary font-label-caps text-[10px] flex items-center justify-center leading-none">3</span></a><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-lg rounded-lg bg-primary-container text-on-primary font-label-md text-label-md tracking-wide transition-colors hover:bg-primary" data-path="sell-give" href="#">Sell / Give</a><div class="flex items-center pl-space-xs"><a data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRWsl2oq4bxiAfzAbjuk7AFST4jQjOSiHh-Lc41rt2gXhjGiWYXtG8t4aloh3cb07ZFR9hM1zc233oPquVGYy78JyQtOJjV3dBSDFu4Ir4GZRxwJVILnDtCJ3EoM3VlVDGg6m_5qInNf-Wn3F7ymCQHTFJy389co8I_OSDVmG_0KF0QIU--X14HezIvsIlyzaJfQrimexSUBfsBZzwaJZgGkaa7B20olHH6ZztFtZF"/></a></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Discovery Bar -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs mb-space-xs text-primary font-label-caps text-label-caps">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>CURATED CIRCULAR LEDGER — DROP VOL. 44</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+          The Marketplace Catalog
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Explore 9,800+ authenticated pre-loved, handcrafted, refurbished and surplus goods verified for enduring provenance.
+        </p>
+</div>
+<!-- Live Quick Stat Summary -->
+<div class="flex items-center gap-space-lg py-space-sm px-space-md bg-surface-container rounded-xl self-start lg:self-auto shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">VERIFIED OBJECTS</span>
+<span class="font-price-md text-price-md text-primary">9,842 Units</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">EST. CARBON OFFSET</span>
+<span class="font-price-md text-price-md text-secondary">38.4 Tonnes</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">LOCAL RADIUS</span>
+<span class="font-price-md text-price-md text-primary">Pan-India</span>
+</div>
+</div>
+</div>
+<!-- Integrated Search Bar & Fast Pills -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-outline text-[22px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="marketplaceSearch" placeholder="Search by designer, craft cluster, archival era, material (e.g., Raw Brass, Kanjivaram, Braun 1982)..." type="text"/>
+<span class="hidden md:inline-flex items-center gap-1 font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-outline">
+<span class="material-symbols-outlined text-[13px]">mic</span> Voice
+        </span>
+<button class="bg-primary-container hover:bg-primary text-on-primary px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-colors shrink-0" type="button">
+          Find
+        </button>
+</div>
+<!-- Quick Fast Pills Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs" id="quickPillsGroup">
+<button class="filter-pill active px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all">All Categories</button>
+<button class="filter-pill px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all">Under ₹1,000</button>
+<button class="filter-pill px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all">Handmade</button>
+<button class="filter-pill px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all">Verified Sellers</button>
+<button class="filter-pill px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all">Free Community Give</button>
+<button class="filter-pill px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all">Restored Tech</button>
+</div>
+<div class="flex items-center gap-space-md ml-auto">
+<!-- View Toggle -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="p-1.5 rounded text-primary hover:bg-surface-container transition-colors" id="gridDenseBtn" title="Detailed Grid">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="p-1.5 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" id="gridSpaciousBtn" title="Gallery Cards">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+<!-- Sort Select -->
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-outline whitespace-nowrap">SORT BY</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none" id="sortSelector">
+<option value="newest">Newest Arrivals</option>
+<option value="price_low">Price: Low to High</option>
+<option value="price_high">Price: High to Low</option>
+<option value="popular">Most Popular</option>
+<option value="proximity">Proximity / Local</option>
+</select>
+<span class="material-symbols-outlined text-[16px] pointer-events-none absolute right-2 top-2 text-outline">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Layout (Sidebar Filter Matrix + Rich Product Catalog) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- SIDEBAR FILTER MATRIX -->
+<aside class="lg:col-span-3 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-lg sticky top-24">
+<!-- Header & Reset Bar -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-primary">Filters</span>
+</div>
+<button class="font-label-caps text-label-caps text-outline hover:text-error transition-colors flex items-center gap-1" id="resetFiltersBtn">
+<span class="material-symbols-outlined text-[14px]">refresh</span> Clear All
+          </button>
+</div>
+<!-- Result count counter -->
+<div class="bg-surface-container-low px-space-sm py-2 rounded-lg flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">MATCHING INVENTORY</span>
+<span class="font-label-md text-label-md text-primary font-semibold" id="activeCountDisplay">Showing 342 Results</span>
+</div>
+<!-- 1. Categories Accordion -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider flex items-center justify-between">
+<span>Pillars &amp; Categories</span>
+<span class="text-outline text-[11px]">6 Pillars</span>
+</label>
+<div class="space-y-1.5 mt-1 font-body-sm text-body-sm text-on-surface">
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>RE:WEAR (Thrift &amp; Vintage)</span>
+</div>
+<span class="text-outline text-[11px]">118</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>ROOTS (Heritage Crafts)</span>
+</div>
+<span class="text-outline text-[11px]">74</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>RE:MAKE (Upcycled Home)</span>
+</div>
+<span class="text-outline text-[11px]">52</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>RE:USE (Refurbished Gear)</span>
+</div>
+<span class="text-outline text-[11px]">39</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>RE:READ (Archival Books)</span>
+</div>
+<span class="text-outline text-[11px]">41</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>RE:SOURCE (Deadstock Mills)</span>
+</div>
+<span class="text-outline text-[11px]">18</span>
+</label>
+</div>
+</div>
+<!-- 2. Listing Type Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Provenance &amp; Origin</label>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[11px] font-semibold">Pre-Owned</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface-variant font-label-caps text-[11px]">Handmade &amp; Artisan</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface-variant font-label-caps text-[11px]">Upcycled</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface-variant font-label-caps text-[11px]">Refurbished</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface-variant font-label-caps text-[11px]">Surplus</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface-variant font-label-caps text-[11px]">Free / Give</button>
+</div>
+</div>
+<!-- 3. Condition Rating -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Archival Condition</label>
+<div class="grid grid-cols-2 gap-1.5 mt-1">
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer font-body-sm text-[12px]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#294d42]"></span>
+<span>Mint / New</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer font-body-sm text-[12px]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#81a899]"></span>
+<span>Gently Used</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer font-body-sm text-[12px]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#afcdc2]"></span>
+<span>Well Loved</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer font-body-sm text-[12px]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#314c44]"></span>
+<span>Restored</span>
+</label>
+</div>
+</div>
+<!-- 4. Price Dual Range Slider -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Price Range</label>
+<span class="font-price-md text-price-md text-primary" id="priceDisplay">₹450 - ₹18,500</span>
+</div>
+<div class="relative mt-2">
+<input class="w-full h-1 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="priceSlider" max="25000" min="100" type="range" value="18500"/>
+<div class="flex items-center justify-between mt-2 font-label-caps text-[10px] text-outline">
+<span>₹100</span>
+<span>₹10,000</span>
+<span>₹25,000+</span>
+</div>
+</div>
+</div>
+<!-- 5. Location / Radius Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Territory / Proximity</label>
+<div class="relative mt-1">
+<select class="w-full bg-surface-container-low font-body-sm text-body-sm text-on-surface p-2.5 rounded-lg appearance-none cursor-pointer focus:outline-none">
+<option selected="">Bangalore (Immediate + Local Pudo)</option>
+<option>Mumbai Metropolitan</option>
+<option>Delhi NCR</option>
+<option>Jaipur Heritage Hub</option>
+<option>Pan-India Verified Shipping</option>
+</select>
+<span class="material-symbols-outlined text-[16px] pointer-events-none absolute right-3 top-3 text-outline">location_on</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<input class="accent-primary w-3.5 h-3.5 rounded" id="localOnly" type="checkbox"/>
+<label class="font-body-sm text-[12px] text-on-surface-variant cursor-pointer" for="localOnly">Only show items within 10 km (Zero-packaging pickup)</label>
+</div>
+</div>
+<!-- 6. Seller Type Badges -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Seller Integrity Tier</label>
+<div class="space-y-1 mt-1 font-body-sm text-[13px] text-on-surface">
+<label class="flex items-center gap-2 p-1.5 rounded hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Independent Artisan</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded hover:bg-surface-container cursor-pointer">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+<span>Verified Student Archive</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded hover:bg-surface-container cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-secondary">history_edu</span>
+<span>Vintage Collector &amp; Estate</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded hover:bg-surface-container cursor-pointer">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-secondary">factory</span>
+<span>B2B Deadstock Surplus</span>
+</label>
+</div>
+</div>
+</aside>
+<!-- RICH PRODUCT GRID -->
+<main class="lg:col-span-9 flex flex-col gap-space-lg">
+<!-- Grid Matrix Header Info -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant">
+<span>FILTER APPLIED:</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-primary font-medium">RE:WEAR, ROOTS, RE:MAKE</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-primary font-medium">&lt; ₹18,500</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline">PAGE 1 OF 28</span>
+</div>
+<!-- 3x3 / 4x3 Interactive Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md" id="productGridContainer">
+<!-- Product Card 1 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial close up shot of a rare hand-spun indigo khadi oversized overcoat with brass bone buttons, hanging on a minimalist weathered wood rail, soft daylight streaming through studio windows in Bangalore, neutral linen background, warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaLyRknr6JHaOF1NwZNmjOiYMW0iMZJi3ZKETcGMnqO9vnhjW5XJYPPZftllAKfBpBfNTxZ6RpGEzeGohcuOMbbBTVL9l-KxrZO7kHq6oE53SsZUUN9uB-FVyaMSLUmvV64rRSMvrTcnFRPr3iB94P4N_NdtqqqCKvhMdND4o-Py381ksI5WeWl-39GosYyUGdGngvbsMvWZhSZ3aFloM-aHP0XX-ncCH350PIMHgV"/>
+<!-- Top tags -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps text-[10px] uppercase font-bold tracking-wider">ROOTS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">Handloom Khadi</span>
+</div>
+<!-- Wishlist action -->
+<button class="wishlist-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<!-- Quick View overlay button -->
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(1)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">1994 Bengal Archive</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-[11px] text-primary">Mint Condition</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Indigo Natural-Dye Bengal Jamdani Robe
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹4,250</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹12,000</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 64%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Square portrait of a female heritage textile curator with silver spectacles and warm smile in a sunlit craft workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnHmaOvrjPy72jA9CSklgKfroPvhOEKRHCN8cuWpmbbLXSkHdiy5xVtE_45oEHMD0Zpz1UW_HkNluehjyOrxdiCbIEQrzcEjxA0KGt7QlvNh4spLhZ0WSK8_ZZuZPcvAvRBl4Hgjz7LBIyUWJiAHRnsqwK9NpsQeTXVYkWcKk7IWEYyOKYSuhMlVW7MRu1jc1S0g25WT3QH4nvDNCfJCDyAlfMuHBGM4bp9ARfqoTs"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Ananya V.</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Certified Master Restorer">verified</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">near_me</span> Indiranagar • 2.4km
+                  </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Vintage solid teak wood mid-century accent chair reupholstered with heavy natural ecru linen upholstery, positioned against warm cream stone wall with soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArXsT7ElhHpvdTTSiyPuXDPx8g9YHfU4AlqpHUGTkHkGoY8hmOSEeTqT00OU5mxlQRMYhCtVYmoWZurrmosWXX-hA_212g9rHjcCaOcJvn3wKKv0CqEN-XTVAq1npyIQ5bQgwWpD_ScFvxT585RFa2R0p6hV1cfeVAKno8gbOZN5HBZzrugB15xwvwmz0C3u5kq4ATGQIcgfQSP6HSsN4Ixmvc4KC1LvzQVkc8NV1l"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[10px] uppercase font-bold tracking-wider">RE:MAKE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">Upcycled Teak</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(2)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">1970s Chandigarh Design</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-[11px] text-primary">Restored Frame</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Reclaimed Burma Teak Studio Lounge Chair
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹14,800</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹36,000</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 58%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Square portrait of an Indian male craftsman carpenter wearing denim work apron in a warm wood workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7VSNfEwnDVEh3cCtGa9Nr6fMOEW7rxkP8xr2F_1OwFbj78UiSQi_YYsvEhNlHpaalsb2PLtOtrRY7XC-Ehk2ryUcT7_I92cshULyohFHWX8COuCMi3AHuvXP5WVyA2g-GRVGhznsoO7rHL5OuiXgX109YlYOOjgwOlwtQHd1HwFHPrzP3nno_7JwP1EICkPmoa7KgJAj5LYyQEzoftpyHKo04W9j8GUOgQc1gLoL_"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Studio Malhar</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Verified Artisan Studio">verified</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Ships Flat-Pack
+                  </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Overhead studio photograph of a classic vintage mechanical 35mm rangefinder camera in matte black brass finish, placed on natural unbleached canvas next to a leather strap." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkIhuxt0oRfTZYhcPyG1_dsBrsx1vUiSS12h5gsSdYHqsk3Hw4SiYfxrg3wgofsvl-17LCbNcqBemUPgfHRnnf1x0m93-VVpwSq-rAf3SnVtBP-tCJh9J1Fe-tBkY6SIf2etCkWRYfTg37qhVCeCyCoa_L4Mztp9fwAK3su3YhRp9_SSrGlf1PDk28KG_vlEFgKUQs9oqp5jvNkOQ6fN4F2nPar8QP7geN3oO3BGl4"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-[10px] uppercase font-bold tracking-wider">RE:USE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">Refurbished Optical</span>
+</div>
+<button class="wishlist-btn active absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(3)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">1981 Yashica Electro</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-[11px] text-primary">CLA Serviced 2024</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Yashica 35mm Rangefinder (F/1.7 45mm)
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹7,900</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹18,500</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 57%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Square portrait avatar of a bearded young lens technician with vintage camera parts in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhmU0JKuqiktsDUGKaR1Usq8BNMuZJ6tmR9mFefDZctmxfsWc7RvolJXT6u4Usls9bkSdVyg9AlUTR1y5YoE2OLg5E5IxRupUYv_g685Tu9lScLJmYhYnqeMucTdTaAv_MZdBXEo48Z9DqtgSL-CQ7JcKwPq8cXIvF7XS9QY-vIbf1A2pQRLYUKzK02y6qXX9v3YzGEayzadxZF0NUpjaX3mB05yVAC27CjcmVDiZN"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Karan's Shutter</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Analog Specialist">verified</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">near_me</span> Koramangala • 5km
+                  </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Aesthetic product photo of an archival hardbound cloth-cover art monograph book with gold debossed lettering, resting on an oak desk with brass reading spectacles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5fOAww2bswdHrXomhUq0NRsljSvUuIV1SxV_w-q3MsSuhXluKNaNol05qG0BcHoNRTl4j9f1mU1E35_aONTZBfU9RgZy6yXj3S0WFT4Rr1syGYlsVkQuALHTyb2esiJCSo6fc4F3Z2XtQ14-WPHnclRb75Q3z7caFvKh-VpbprY9-4EPrIIGT4-cRfs8QMbxmqsKhv7ogKoyVmEoP5U8vEfF70Ofo0_1OUFJVuSe"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-[10px] uppercase font-bold tracking-wider">RE:READ</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">First Edition</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(4)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">Marg Publications 1988</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-caps text-[11px] text-primary">Archival Grade</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Architectural Splendours of Vijaynagara
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹1,850</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹4,500</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 59%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Avatar portrait of a retired literature professor with white hair and tweed jacket." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGIijw6WTkH5AKEdYblZzh3h3toFAERsWlfmw39tm3xg_-lfU_THQz565xnVfTrF11I7OCj1sr1X53erYCGpWYg-sayiSr9jGLXgIYv2_6IVaT5acbh8Pd-oddcUUgabLF_TTThjMNacEO5kJkAL4f5SoBGktAuvkmXosTEHrUsJ4jhBaIOpf97ojh_krzcaV2MROF07O0yuyBLSHxgZm45Rje6O2WBIIf2wxuFjr"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Prof. Devraj</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Private Collector">history_edu</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Pan-India Box
+                  </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="High quality fashion editorial photograph of an oversized heavy olive Japanese cotton utility worker overshirt on an invisible ghost mannequin against clean warm sandstone wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblhfU6fAn3b2tBZvUxdizX8LewgOlmPXZ7xVuUmgqs1Unwa3gfb0In_ummc335RF3iVUPpl0u_tc64LlhkHIDtUTchdg0y5SFRID-bvpFDtTWqO5d7qhfoaSVT4kFIpacPfOFGRWta-gqI4hRuM6BFmVoIKizqPYsKPWVIeBXHaSDTznGG0bMLAHP-8OYMAEBkqgAxu6CM4PoiniUjTIpj4x_c57Exp9pJI11hoeR"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps text-[10px] uppercase font-bold tracking-wider">RE:WEAR</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">Vintage Denim</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(5)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">1997 Muji Raw Cotton Archive</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-[11px] text-primary">Flawless Grade A</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Raw Selvedge Drill Overshirt (Size L)
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹2,400</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹7,200</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 66%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Round avatar portrait of a modern stylish student dressed in earth-toned linen garments in Delhi." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABVIHI2eQMyNLYybrU4GPu8tVeGZsCfdqp9jj_oTpRqSkyNAna6zSNTwqvG5K3L2GWJvcf8eEa24ZScEstUpTSOXBqzMUyKmvxJnj1H9DA3OdD6UutnVMqLf7Wr98RsDYkYFVzcFXLnq3ote3aGX7ilUQS5O7dUgKS1PEqkOHFO1lW8TTDIJR-WVlMtPFaAeeXMIYVSg4gk33PadL5_ldmnTIxd32OV-NWAcyUhZYD"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Tara Sen</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="NIFT Student Verified">school</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">near_me</span> Malleshwaram • 6km
+                  </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial product photo of two hand-hammered antique brass ritual lotas and matching tray with warm golden patina, arranged on dark slate with dried eucalyptus sprigs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKflKuf0jBbvCqJztKenHVL_VOTjShIbAqBOjEjbyEdV-L6yOpvG56_hlvGHXSv3dMueEA6J9F411BCy-Kuz_wvWJZt_DovRejxWMGyBk6-Q1AXuV8Lz1viny6JRSI6QtJkt8bh0tyzVL3bCEC4QsJYKCgertdfiCRp4Klt14X732iXa01TjXRkUoEMFi4ndeOpMLYPqc1gUy0cy18RctNWvgIkzGeiYSZWaXmGMDd"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-caps text-[10px] uppercase font-bold tracking-wider">ROOTS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-[10px] uppercase font-semibold">Tinkered Brass</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors shadow-sm z-10" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+<button class="w-full py-2 bg-primary-container/95 hover:bg-primary text-on-primary text-label-md font-label-md rounded-lg backdrop-blur-sm shadow flex items-center justify-center gap-1.5 transition-colors" onclick="openQuickView(6)">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Quick View Dossier
+                </button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-[11px] text-outline uppercase tracking-wider">Moradabad Metal Guild</span>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-[11px] text-primary">Natural Patina</span>
+</div>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary group-hover:text-secondary transition-colors line-clamp-1">
+                  Hand-Hammered Kansa &amp; Brass Vessel Set
+                </h3>
+</div>
+<div class="pt-space-xs">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-price-lg text-price-lg text-primary">₹3,200</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹6,800</span>
+<span class="font-label-caps text-[10px] font-semibold text-secondary bg-secondary-container px-1.5 py-0.5 rounded">SAVE 53%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Round avatar of an elder Indian metalsmith with headscarf and silver spectacles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLrSJb5lj_E4sJjldiCX6uB4G2CbkTHJ0LyhUpDzFYxoOgOiFXmtP44aJ3WYxiF_yX8NDU0qTSlETMS5AYvDVycR5hYRYK5Xbnx9ZU3KKm-OWxEWn6kigTtZu1Xu0FSArWvzUKcN1kLVFYd68jxJBH7irsXaLBcHjZHjEbFazHiZ2wl1wIDwmi2EvUgLW3oBMsoDX45opKgZ10TzhisYQKuvPg3lfvNU5ltAM0iPq5"/>
+<span class="font-body-sm text-[12px] text-on-surface truncate max-w-[110px]">Purana Store</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Generational Dealer">verified</span>
+</div>
+<span class="font-label-caps text-[11px] text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Eco Packed
+                  </span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Inline Editorial Breakout Banner (Sustainability Impact Ledger) -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">eco</span>
+</div>
+<div>
+<h4 class="font-title-editorial text-title-editorial text-primary">Circularity Assurance Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                Every acquisition prevents virgin manufacturing demand. All seller listings undergo AI condition auditing and 7-day verified escrow guarantee.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-outline block">COLLECTIVE DISPLACEMENT</span>
+<span class="font-price-lg text-price-lg text-primary">94.8% Waste Diverted</span>
+</div>
+</div>
+</div>
+<!-- PAGINATION & RESULT SUMMARY -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md pb-space-lg">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing <strong class="text-primary font-semibold">1 – 6</strong> of 342 listings</span>
+<span class="text-outline">•</span>
+<div class="flex items-center gap-1.5">
+<span>Show</span>
+<select class="bg-surface-container-low text-on-surface text-label-md font-label-md py-1 px-2 rounded focus:outline-none cursor-pointer">
+<option selected="">6 per page</option>
+<option>12 per page</option>
+<option>24 per page</option>
+<option>48 per page</option>
+</select>
+</div>
+</div>
+<!-- Refined Editorial Page Numbers -->
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span> Prev
+            </button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-bold flex items-center justify-center">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors">3</button>
+<span class="px-1 text-outline">…</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors">28</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+              Next <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</section>
+<!-- QUICK VIEW MODAL OVERLAY & DOSSIER DRAWER -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" id="quickViewBackdrop">
+<div class="bg-surface-container-lowest rounded-2xl max-w-4xl w-full max-h-[921px] overflow-y-auto shadow-2xl scale-95 transition-transform duration-300 flex flex-col md:flex-row relative" id="quickViewCard">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="closeQuickView()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Media Visual Area -->
+<div class="md:w-1/2 bg-surface-container relative p-6 flex flex-col justify-between">
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Editorial gallery photograph of an antique indigo Jamdani artisanal textile garment draped elegantly on a sculptural wooden easel with warm raking light." id="modalImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClccbc_CTBg7cv_yEjWAZDrWi51XP97DOBM2tlAsUuPWYwpE5k8tzawv7a0f2lXAPNspexNeUK4oEggPoT6fH8ycUSe2poNhpe2shhcx5iS14z-kbzUrsh-t_qVTYss9H0mkejaDsSgMFKbI8ZjhvIR4PE-XqJaC9eyq35UZ2rjzV4l9dVs7uqit6sieR60mFLnO4eEPvts0rGCUgORwpLinY6tOu0AKeO3wIZdsnp"/>
+<span class="absolute bottom-3 left-3 bg-primary-container text-on-primary font-label-caps text-[10px] px-2 py-0.5 rounded uppercase">
+            AI Optical Verified 99.1%
+          </span>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-label-caps text-[11px]">
+<span>PROVENANCE CODE: AF-88219-IND</span>
+<span>LOCATION: BANGALORE (LOCAL)</span>
+</div>
+</div>
+<!-- Item Dossier Breakdown Details -->
+<div class="md:w-1/2 p-space-lg flex flex-col justify-between">
+<div>
+<!-- Tags -->
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caps text-[10px] uppercase font-bold" id="modalTag">ROOTS</span>
+<span class="font-label-caps text-[11px] text-secondary font-semibold">100% CIRCULAR HERITAGE</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight mb-space-xs" id="modalTitle">
+            Indigo Natural-Dye Bengal Jamdani Robe
+          </h2>
+<div class="flex items-baseline gap-3 mb-space-md">
+<span class="font-price-lg text-price-lg text-primary text-[24px]" id="modalPrice">₹4,250</span>
+<span class="font-body-md text-body-md text-outline line-through" id="modalStrike">₹12,000</span>
+<span class="font-label-caps text-label-caps text-secondary bg-secondary-container px-2 py-0.5 rounded font-bold">64% BELOW RETAIL</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed" id="modalDesc">
+            Acquired from a private collector in Murshidabad. Handspun 100-count organic cotton dyed using cold-vat fermented Indigofera tinctoria. No tears, complete natural selvedge edge intact.
+          </p>
+<!-- Sustainability Impact Meter -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-caps text-label-caps text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">energy_savings_leaf</span>
+                CIRCULAR METRICS DISPLACEMENT
+              </span>
+<span class="font-label-caps text-[11px] text-secondary font-bold">-18.4 kg CO2e</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+<div class="flex items-center justify-between mt-1 text-[11px] text-outline font-label-caps">
+<span>Water Saved: 2,700 Litres</span>
+<span>88% Lifecycle Extended</span>
+</div>
+</div>
+<!-- Materials Breakdown -->
+<div class="space-y-1.5 mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Materials:</span>
+<span class="text-on-surface font-medium">100% Khadi Cotton, Natural Indigo</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Physical Condition:</span>
+<span class="text-on-surface font-medium">Mint / Never laundered with synthetic detergents</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Escrow Protection:</span>
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> 7-Day Free Returns
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Drawer Controls -->
+<div class="flex flex-col gap-2 pt-space-sm border-t border-transparent">
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-3 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Add to Bag (Escrow Lock)
+            </button>
+<button class="flex-1 py-3 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">gavel</span> Make a Circular Offer
+            </button>
+</div>
+<p class="text-center font-label-caps text-[10px] text-outline">
+            Inspected by AFTERLIFE Curators • Verified zero chemical fragrance
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactivity -->
+<script>
+    // Live Price Slider Synchronizer
+    const priceSlider = document.getElementById('priceSlider');
+    const priceDisplay = document.getElementById('priceDisplay');
+    if (priceSlider && priceDisplay) {
+      priceSlider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value).toLocaleString('en-IN');
+        priceDisplay.textContent = `₹450 - ₹${val}`;
+      });
+    }
+
+    // Filter Pills Toggle
+    const filterPills = document.querySelectorAll('.filter-pill');
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.add('bg-primary-container', 'text-on-primary');
+      });
+    });
+
+    // Wishlist Toggle
+    function toggleWishlist(btn) {
+      btn.classList.toggle('active');
+      if (btn.classList.contains('active')) {
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('text-error');
+      } else {
+        btn.classList.remove('text-error');
+        btn.classList.add('text-on-surface-variant');
+      }
+    }
+
+    // Grid Layout View Mode Toggle
+    const gridDenseBtn = document.getElementById('gridDenseBtn');
+    const gridSpaciousBtn = document.getElementById('gridSpaciousBtn');
+    const productGridContainer = document.getElementById('productGridContainer');
+
+    if (gridDenseBtn && gridSpaciousBtn && productGridContainer) {
+      gridDenseBtn.addEventListener('click', () => {
+        gridDenseBtn.classList.add('text-primary');
+        gridDenseBtn.classList.remove('text-outline');
+        gridSpaciousBtn.classList.add('text-outline');
+        gridSpaciousBtn.classList.remove('text-primary');
+        productGridContainer.className = "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md";
+      });
+
+      gridSpaciousBtn.addEventListener('click', () => {
+        gridSpaciousBtn.classList.add('text-primary');
+        gridSpaciousBtn.classList.remove('text-outline');
+        gridDenseBtn.classList.add('text-outline');
+        gridDenseBtn.classList.remove('text-primary');
+        productGridContainer.className = "grid grid-cols-1 md:grid-cols-2 gap-space-lg";
+      });
+    }
+
+    // Quick View Modal Data
+    const modalItems = {
+      1: {
+        tag: 'ROOTS',
+        title: 'Indigo Natural-Dye Bengal Jamdani Robe',
+        price: '₹4,250',
+        strike: '₹12,000',
+        desc: 'Acquired from a private collector in Murshidabad. Handspun 100-count organic cotton dyed using cold-vat fermented Indigofera tinctoria. No tears, complete natural selvedge edge intact.'
+      },
+      2: {
+        tag: 'RE:MAKE',
+        title: 'Reclaimed Burma Teak Studio Lounge Chair',
+        price: '₹14,800',
+        strike: '₹36,000',
+        desc: 'Salvaged from an institutional estate in Malleshwaram. Structurally strengthened using traditional mortise-and-tenon joints, treated with cold-pressed natural linseed oil and upholstered in unbleached Belgian linen.'
+      },
+      3: {
+        tag: 'RE:USE',
+        title: 'Yashica 35mm Rangefinder (F/1.7 45mm)',
+        price: '₹7,900',
+        strike: '₹18,500',
+        desc: 'Precision camera CLA serviced in Bangalore, November 2024. New light seals installed, shutter timings calibrated within 1/500s tolerance. Viewfinder optics crystal clear.'
+      },
+      4: {
+        tag: 'RE:READ',
+        title: 'Architectural Splendours of Vijaynagara',
+        price: '₹1,850',
+        strike: '₹4,500',
+        desc: 'Out of print 1988 Marg hardbound edition. Spine intact with original gold stamping, includes all fold-out photographic plates and floorplans.'
+      },
+      5: {
+        tag: 'RE:WEAR',
+        title: 'Raw Selvedge Drill Overshirt (Size L)',
+        price: '₹2,400',
+        strike: '₹7,200',
+        desc: 'Archival heavy 14oz Japanese cotton drill overshirt. Features horn buttons and flat-felled seam construction. Laundered strictly using organic soapnuts.'
+      },
+      6: {
+        tag: 'ROOTS',
+        title: 'Hand-Hammered Kansa & Brass Vessel Set',
+        price: '₹3,200',
+        strike: '₹6,800',
+        desc: 'Authentic high-tin bronze alloy vessels with hand-beaten indentations. Retains original mellow oxidation patina, food-grade safe and thermally responsive.'
+      }
+    };
+
+    function openQuickView(id) {
+      const data = modalItems[id];
+      if (data) {
+        document.getElementById('modalTag').innerText = data.tag;
+        document.getElementById('modalTitle').innerText = data.title;
+        document.getElementById('modalPrice').innerText = data.price;
+        document.getElementById('modalStrike').innerText = data.strike;
+        document.getElementById('modalDesc').innerText = data.desc;
+      }
+      const backdrop = document.getElementById('quickViewBackdrop');
+      const card = document.getElementById('quickViewCard');
+      backdrop.classList.remove('hidden');
+      setTimeout(() => {
+        backdrop.classList.remove('opacity-0');
+        card.classList.remove('scale-95');
+        card.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeQuickView() {
+      const backdrop = document.getElementById('quickViewBackdrop');
+      const card = document.getElementById('quickViewCard');
+      backdrop.classList.add('opacity-0');
+      card.classList.remove('scale-100');
+      card.classList.add('scale-95');
+      setTimeout(() => {
+        backdrop.classList.add('hidden');
+      }, 300);
+    }
+
+    // Close on backdrop click
+    document.getElementById('quickViewBackdrop').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeQuickView();
+      }
+    });
+
+    // Reset Filters Micro-Interaction
+    document.getElementById('resetFiltersBtn').addEventListener('click', () => {
+      document.querySelectorAll('input[type="checkbox"]').forEach(c => c.checked = false);
+      if (priceSlider) {
+        priceSlider.value = 18500;
+        priceDisplay.textContent = '₹450 - ₹18,500';
+      }
+      document.getElementById('activeCountDisplay').textContent = "Showing 9,842 Results";
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-margin text-on-surface"><div class="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl"><div class="lg:col-span-4"><div class="flex items-center gap-space-sm mb-space-md"><img alt="AFTERLIFE Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB06pWau88_iJqBKVioaXxTVD6AsDtv2TUzYnm8OE5JZMecc36wNu6JZQXBzFpQYTmSWCWy6krhXbaDJzmWW0Ak8mHwo6pffDtmy0q9uW3chviUlm0gA5YGvQDmIzhW2dxWOHwXNuGHDIeNM6fhw_OOZuzDT6jAdWjrRtySXCCw7DMwaBSy3_3OTmV04ewovG4n9NjQFsSLmJSO1__5k2XvmcXhIG3GpYexglIjrttr"/><span class="font-title-editorial text-title-editorial text-primary uppercase">AFTERLIFE</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-lg leading-relaxed">Find value in what the world overlooks. Buy differently. Sell meaningfully. Waste less.</p><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">verified</span>100% Circular Verified</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">eco</span>Carbon Neutral</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">shield</span>Escrow Protected</span></div></div><div class="lg:col-span-3"><h4 class="font-label-caps text-label-caps text-primary tracking-wider uppercase mb-space-md">Curated Pillars</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors block py-0.5" data-path="re-wear" href="#">RE:WEAR — Thrift Fashion</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="roots" href="#">ROOTS — Handloom &amp; Crafts</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="re-read" href="#">RE:READ — Second-hand Books</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="re-make" href="#">RE:MAKE — Upcycled Furniture</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="re-use" href="#">RE:USE — Refurbished Tech</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="re-source" href="#">RE:SOURCE — Surplus Materials</a></li></ul></div><div class="lg:col-span-2"><h4 class="font-label-caps text-label-caps text-primary tracking-wider uppercase mb-space-md">Marketplace</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors block py-0.5" data-path="how-it-works" href="#">How It Works</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="verified-sellers" href="#">Verified Sellers</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="impact-ledger" href="#">Impact Ledger</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="circular-guarantee" href="#">Circular Guarantee</a></li><li><a class="hover:text-primary transition-colors block py-0.5" data-path="student-perks" href="#">Student Perks</a></li></ul></div><div class="lg:col-span-3"><h4 class="font-label-caps text-label-caps text-primary tracking-wider uppercase mb-space-md">Weekly Curated Drops</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Receive hand-inspected circular artifacts and provenance dossiers every Thursday.</p><form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault();"><div class="flex items-center rounded-lg bg-surface-container-lowest overflow-hidden p-1 shadow-[0_1px_3px_rgba(16,43,36,0.04)]"><input class="w-full px-space-sm bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="collector@archive.org" type="email"/><button class="px-space-md py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-md hover:bg-primary transition-colors shrink-0" type="button">Join</button></div><span class="font-label-caps text-[10px] text-outline">Zero spam. Cancel subscription at any time.</span></form></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 AFTERLIFE Unified Circular Marketplace. All rights reserved.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-primary transition-colors" data-path="privacy" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms" href="#">Terms of Provenance</a><a class="hover:text-primary transition-colors" data-path="circularity-standards" href="#">Circularity Standards</a></div></div></div></footer></body></html>

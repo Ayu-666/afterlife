@@ -76,15 +76,33 @@ export function filterProducts(products: Product[], filters: FilterState): Produ
 
   // Search
   if (filters.search.trim()) {
-    const q = filters.search.toLowerCase();
-    result = result.filter(
-      (p) =>
-        p.title.toLowerCase().includes(q) ||
-        p.description.toLowerCase().includes(q) ||
-        p.sellerName.toLowerCase().includes(q) ||
-        p.location.toLowerCase().includes(q) ||
-        (p.tags ?? []).some((t) => t.toLowerCase().includes(q))
-    );
+    const rawQ = filters.search.trim().toLowerCase();
+    const tokens = rawQ
+      .split(/[\s,&/]+/)
+      .map((t) => t.trim())
+      .filter((t) => t.length > 2);
+
+    result = result.filter((p) => {
+      const searchTarget = [
+        p.title,
+        p.description,
+        p.sellerName,
+        p.location,
+        ...(p.tags ?? []),
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      // Exact substring match
+      if (searchTarget.includes(rawQ)) return true;
+
+      // Token matching for multi-word queries like "Audio & Hi-Fi", "Terracotta & Clay"
+      if (tokens.length > 0 && tokens.some((token) => searchTarget.includes(token))) {
+        return true;
+      }
+
+      return false;
+    });
   }
 
   // Categories

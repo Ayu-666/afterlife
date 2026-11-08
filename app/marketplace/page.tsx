@@ -28,13 +28,19 @@ function MarketplaceContent() {
   const { products } = useMarketplace();
   const searchParams = useSearchParams();
   const qParam = searchParams.get("q") || "";
-  const catParam = searchParams.get("cat") || "";
+  const catParam = searchParams.get("cat") || searchParams.get("category") || "";
 
-  const [filters, setFilters] = useState<FilterState>({
+  const resolveCategory = (raw: string): Category[] => {
+    if (!raw) return [];
+    const matched = CATEGORIES.find((c) => c.toLowerCase() === raw.toLowerCase());
+    return matched ? [matched] : [];
+  };
+
+  const [filters, setFilters] = useState<FilterState>(() => ({
     ...DEFAULT_FILTERS,
     search: qParam,
-    categories: catParam ? [catParam as Category] : [],
-  });
+    categories: resolveCategory(catParam),
+  }));
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const allProducts = products.length > 0 ? products : getSeedProducts();
@@ -42,11 +48,12 @@ function MarketplaceContent() {
 
   useEffect(() => {
     // Sync filters from URL search params
+    const matched = resolveCategory(catParam);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setFilters((f) => ({
       ...f,
-      ...(qParam ? { search: qParam } : {}),
-      ...(catParam ? { categories: [catParam as Category] } : {}),
+      search: qParam,
+      categories: matched.length > 0 ? matched : (catParam ? [] : f.categories),
     }));
   }, [qParam, catParam]);
 
@@ -77,7 +84,12 @@ function MarketplaceContent() {
     }));
   };
 
-  const resetFilters = () => setFilters(DEFAULT_FILTERS);
+  const resetFilters = () => {
+    setFilters(DEFAULT_FILTERS);
+    if (typeof window !== "undefined") {
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+  };
 
   const hasActiveFilters =
     filters.categories.length > 0 ||
@@ -337,8 +349,8 @@ function MarketplaceContent() {
       {/* Main content */}
       <section className="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg pb-space-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
-          {/* Desktop sidebar */}
-          <div className="hidden lg:block lg:col-span-3 sticky top-24">
+          {/* Desktop sidebar with independent scrolling */}
+          <div className="hidden lg:block lg:col-span-3 sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto overscroll-contain pr-1">
             {renderSidebar()}
           </div>
 
