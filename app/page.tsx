@@ -13,25 +13,28 @@ import { getSeedProducts } from "@/lib/data";
 
 const HERO_PRODUCTS = [
   {
-    label: "1982 VINTAGE TEXTILE",
-    title: "Raw Kanjivaram Brocade",
-    price: "₹4,200",
-    badge: "MINT CONDITION",
-    type: "ARCHIVE PIECE",
+    id: "rw-002",
+    label: "VINTAGE DENIM ARCHIVE",
+    title: "501 Original Straight Fit Jeans",
+    price: "₹2,600",
+    badge: "VERY GOOD",
+    type: "RE:WEAR",
     img: "/images/products/rw-002.jpg",
   },
   {
+    id: "rm-002",
     label: "CIRCULAR WORKSHOP",
     title: "Reclaimed Oak Monolith Lamp",
-    price: "₹2,850",
+    price: "₹3,400",
     badge: "UPCYCLED DECOR",
     type: "RE:MAKE",
     img: "/images/products/rm-002.jpg",
   },
   {
+    id: "ru-002",
     label: "1981 YASHICA",
     title: "Yashica 35mm Classic",
-    price: "₹5,400",
+    price: "₹6,800",
     badge: "REFURBISHED",
     type: "TESTED",
     img: "/images/products/ru-002.jpg",
@@ -173,14 +176,15 @@ export default function HomePage() {
               </svg>
 
               {HERO_PRODUCTS.map((p, i) => (
-                <div
+                <Link
                   key={p.title}
-                  className={`relative z-${10 + i * 10} ${
+                  href={`/product/${p.id}`}
+                  className={`group block relative z-${10 + i * 10} focus:outline-none focus:ring-2 focus:ring-primary rounded-lg ${
                     i === 0
-                      ? "w-64 md:w-72 bg-surface-container-lowest rounded-lg p-2.5 shadow-md transform -rotate-2 hover:rotate-0 transition-transform duration-300"
+                      ? "w-64 md:w-72 bg-surface-container-lowest rounded-lg p-2.5 shadow-md transform -rotate-2 hover:rotate-0 hover:shadow-xl transition-all duration-300"
                       : i === 1
-                      ? "self-end -mt-16 w-56 md:w-64 bg-surface-container-lowest rounded-lg p-2.5 shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300"
-                      : "self-start -mt-8 ml-4 w-52 md:w-60 bg-surface-container-lowest rounded-lg p-2.5 shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300"
+                      ? "self-end -mt-16 w-56 md:w-64 bg-surface-container-lowest rounded-lg p-2.5 shadow-xl transform rotate-3 hover:rotate-0 hover:shadow-2xl transition-all duration-300"
+                      : "self-start -mt-8 ml-4 w-52 md:w-60 bg-surface-container-lowest rounded-lg p-2.5 shadow-lg transform -rotate-1 hover:rotate-0 hover:shadow-xl transition-all duration-300"
                   }`}
                 >
                   <div
@@ -192,7 +196,7 @@ export default function HomePage() {
                       src={p.img}
                       alt={p.title}
                       fill
-                      className="object-cover"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                       sizes="300px"
                     />
                     <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-tertiary-fixed text-primary text-[10px] font-semibold">
@@ -204,11 +208,11 @@ export default function HomePage() {
                   </div>
                   <div className="pt-2 px-1">
                     <span className="text-[10px] text-outline block tracking-wider uppercase">{p.label}</span>
-                    <p className="font-[family-name:var(--font-playfair)] text-[16px] font-semibold text-primary truncate">
+                    <p className="font-[family-name:var(--font-playfair)] text-[16px] font-semibold text-primary group-hover:text-secondary transition-colors truncate">
                       {p.title}
                     </p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -368,31 +372,34 @@ export default function HomePage() {
       <section className="w-full max-w-[1440px] mx-auto px-gutter lg:px-margin-lg py-space-2xl">
         <div className="bg-surface-container-high rounded-2xl overflow-hidden p-space-lg lg:p-space-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg items-center">
-            <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg bg-surface-container-highest">
+            <Link
+              href="/categories/ROOTS"
+              className="group relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg bg-surface-container-highest block focus:outline-none focus:ring-2 focus:ring-primary"
+            >
               <Image
-                src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=800&q=80"
-                alt="Master artisan at work"
+                src="/images/khurja-pottery-hero.jpg"
+                alt="Handcrafted Khurja Pottery Collection"
                 fill
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-space-md rounded-lg flex items-center justify-between">
+              <div className="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-space-md rounded-lg flex items-center justify-between group-hover:bg-surface transition-colors">
                 <div>
                   <span className="text-[11px] font-semibold text-secondary block tracking-wider">
                     LIVING HERITAGE INITIATIVE
                   </span>
-                  <h4 className="font-[family-name:var(--font-playfair)] text-[18px] font-semibold text-primary">
+                  <h4 className="font-[family-name:var(--font-playfair)] text-[18px] font-semibold text-primary group-hover:text-secondary transition-colors">
                     Khurja Pottery Collective
                   </h4>
                   <p className="text-[13px] text-on-surface-variant">
                     Uttar Pradesh · 60+ years of tradition
                   </p>
                 </div>
-                <div className="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 text-[20px]">
-                  ✅
+                <div className="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 text-[20px] group-hover:scale-110 transition-transform">
+                  <ArrowRight size={20} className="text-on-secondary-container" />
                 </div>
               </div>
-            </div>
+            </Link>
 
             <div className="flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-space-sm">

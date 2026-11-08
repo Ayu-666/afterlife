@@ -44,15 +44,17 @@ export default function ProductCard({ product }: { product: Product }) {
     <article className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
       {/* Image */}
       <div className="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
-        <Image
-          src={imageSrc}
-          alt={product.title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-          onError={() => setImgError(true)}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          unoptimized={!!product.imagePreviewUrl || imgError}
-        />
+        <Link href={`/product/${product.id}`} className="block relative w-full h-full">
+          <Image
+            src={imageSrc}
+            alt={product.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+            onError={() => setImgError(true)}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            unoptimized={!!product.imagePreviewUrl || imgError}
+          />
+        </Link>
 
         {/* Top tags */}
         <div className="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
@@ -77,6 +79,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <button
           onClick={(e) => {
             e.preventDefault();
+            e.stopPropagation();
             toggleWishlist(product.id);
           }}
           className={`absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center transition-colors shadow-sm z-10 ${
